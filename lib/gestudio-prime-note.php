@@ -23,18 +23,18 @@ class GestudioPrimeNote{
 	
 		//register the products custom post type
 		$labels = array(
-			'name' => __( 'Blotter Entries', 'bimba' ),
-			'singular_name' => __( 'Blotter Entry', 'bimba' ),
-			'add_new' => __( 'Add', 'bimba' ),
-			'add_new_item' => __( 'Add Blotter Entry', 'bimba' ),
-			'edit_item' => __( 'Modify Blotter Entry', 'bimba' ),
-			'new_item' => __( 'New Blotter Entry', 'bimba' ),
-			'all_items' => __( '-List Blotter Entries', 'bimba' ),
-			'view_item' => __( 'View Blotter Entry', 'bimba' ),
-			'search_items' => __( 'Search Blotter Entries', 'bimba' ),
-			'not_found' =>  __( 'No Blotter Entry found', 'bimba' ),
-			'not_found_in_trash' => __( 'No Blotter Entry found in Trash', 'bimba' ),
-			'menu_name' => __( 'Blotter Entries', 'bimba' )
+			'name' => __( 'Blotter Entries', 'bim-ba' ),
+			'singular_name' => __( 'Blotter Entry', 'bim-ba' ),
+			'add_new' => __( 'Add', 'bim-ba' ),
+			'add_new_item' => __( 'Add Blotter Entry', 'bim-ba' ),
+			'edit_item' => __( 'Modify Blotter Entry', 'bim-ba' ),
+			'new_item' => __( 'New Blotter Entry', 'bim-ba' ),
+			'all_items' => __( '-List Blotter Entries', 'bim-ba' ),
+			'view_item' => __( 'View Blotter Entry', 'bim-ba' ),
+			'search_items' => __( 'Search Blotter Entries', 'bim-ba' ),
+			'not_found' =>  __( 'No Blotter Entry found', 'bim-ba' ),
+			'not_found_in_trash' => __( 'No Blotter Entry found in Trash', 'bim-ba' ),
+			'menu_name' => __( 'Blotter Entries', 'bim-ba' )
 		  );
 		
 		  $args = array(
@@ -55,7 +55,7 @@ class GestudioPrimeNote{
 		  
 		  register_post_type( 'prime-note', $args );
 		  
-		  register_taxonomy('categoria-contabile' , 'prime-note', array ( 'hierarchical' => true, 'label' => __('Counting Category', 'bimba' ),
+		  register_taxonomy('categoria-contabile' , 'prime-note', array ( 'hierarchical' => true, 'label' => __('Counting Category', 'bim-ba' ),
 		  'query-var' => true,'rewrite' => true));
 		  
 		  $this->array_opr = Gestudio::array_lista_opr();
@@ -72,7 +72,7 @@ class GestudioPrimeNote{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Search Blotter Entries',
-		__('Search Blotter Entries', 'bimba'),
+		__('Search Blotter Entries', 'bim-ba'),
 		'manage_options',
 		'gestudio_pn_src_page',
 		array( $this, 'gestudio_pn_ricerca_page' )
@@ -84,7 +84,7 @@ class GestudioPrimeNote{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Counting Categories',
-		__('-Counting Categories', 'bimba'),
+		__('-Counting Categories', 'bim-ba'),
 		'manage_options',
 		'edit-tags.php?taxonomy=categoria-contabile&post_type=prime-note'
 				//, array( $this, 'create_admin_page' )
@@ -93,7 +93,7 @@ class GestudioPrimeNote{
 	
 	public function gestudio_pn_register_meta_box() {
 		
-		add_meta_box( 'gestudio_pn_meta', __( 'Movement','bimba' ), array ( $this, 'gestudio_pn_meta_box'), 'prime-note', 'side', 'default' );
+		add_meta_box( 'gestudio_pn_meta', __( 'Movement','bim-ba' ), array ( $this, 'gestudio_pn_meta_box'), 'prime-note', 'side', 'default' );
 		
 	}
 	
@@ -113,12 +113,12 @@ class GestudioPrimeNote{
 		}
 		
 		$array_movimenti = array(
-				__('Cash Income', 'bimba' ),
-				__('Cash Expense', 'bimba' ),
-				__('Bank Income', 'bimba' ),
-				__('Bank Expense', 'bimba' ),
-				__('Clearance Bank=>Cash', 'bimba' ),
-				__('Clearance Cash=>Bank', 'bimba' )
+				__('Cash Income', 'bim-ba' ),
+				__('Cash Expense', 'bim-ba' ),
+				__('Bank Income', 'bim-ba' ),
+				__('Bank Expense', 'bim-ba' ),
+				__('Clearance Bank=>Cash', 'bim-ba' ),
+				__('Clearance Cash=>Bank', 'bim-ba' )
 		);
 		
 		
@@ -135,15 +135,15 @@ class GestudioPrimeNote{
 			}
 		}
 		
-		echo '<label for="importo">'.__('Amount', 'bimba' ).'</label>';
+		echo '<label for="importo">'.__('Amount', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<input id="importo" name="importo" type="number" step="0.01" value="'.$importo.'"/>';
 		echo '<hr>';
 		
-		echo '<label for="lavoro">'.__('Project', 'bimba' ).'</label>';
+		echo '<label for="lavoro">'.__('Project', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<select id="lavoro" name="lavoro" >';
-		echo '<option value="">' . __('-Select Project-','bimba') . '</option>';
+		echo '<option value="">' . __('-Select Project-','bim-ba') . '</option>';
 		
 		foreach ( $this->array_lav as $lav ){
 			echo '<option value="' . $lav . '"' . selected($lavoro, $lav, false) . '>' . $lav . '</option>';
@@ -151,10 +151,10 @@ class GestudioPrimeNote{
 		
 		echo '</select><br>';
 		
-		echo '<label for="operatore">'.__('Operator', 'bimba' ).'</label>';
+		echo '<label for="operatore">'.__('Operator', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<select id="operatore" name="operatore" >';
-		echo '<option value="">' . __('-Select Operator-','bimba') . '</option>';
+		echo '<option value="">' . __('-Select Operator-','bim-ba') . '</option>';
 		
 		foreach ( $this->array_opr as $opr){
 			echo '<option value="' . $opr . '"' . selected($operatore, $opr, false) . '>' . $opr . '</option>';
@@ -215,7 +215,7 @@ class GestudioPrimeNote{
 		$operatore = sanitize_text_field( $_POST['operatore'] );
 		
 		if (!isset($term_name)){
-			$err = __('Warning: Counting Category not defined.' , 'bimba' );//attento: il carattere 'è' non fa funzionare update_post_meta
+			$err = __('Warning: Counting Category not defined.' , 'bim-ba' );//attento: il carattere 'è' non fa funzionare update_post_meta
 		} else {
 			$err = $this->ciclo_immissione($term_name, $immissione);	
 		}
@@ -234,9 +234,9 @@ class GestudioPrimeNote{
 	
 	public function gestudio_pn_ricerca_page(){
 		
-		$this->inspect = __('Search', 'bimba');
+		$this->inspect = __('Search', 'bim-ba');
 		
-		echo '<h2>' . __('Search Blotter Entries','bimba') . '</h2>';
+		echo '<h2>' . __('Search Blotter Entries','bim-ba') . '</h2>';
 		
 		$search = $this->gestudio_pn_controllo();//controlla e passa gli argomenti della ricerca
 		
@@ -251,18 +251,18 @@ class GestudioPrimeNote{
 		if ( $loop->have_posts() ):
 		
 		echo '<hr><table class="wp-list-table widefat fixed striped posts">';
-		echo '<tr><th>'.__('Blotter Entry','bimba').'</th>
-				<th>'.__('Date','bimba').'</th>
-				<th>'.__('Description','bimba').'</th>
-				<th>'.__('Counting Category','bimba').'</th>
-				<th>'.__('Project','bimba').'</th>
-				<th>'.__('Operator','bimba').'</th>
-				<th style="text-align : right">'.__('Movement','bimba').'</th></tr>';
+		echo '<tr><th>'.__('Blotter Entry','bim-ba').'</th>
+				<th>'.__('Date','bim-ba').'</th>
+				<th>'.__('Description','bim-ba').'</th>
+				<th>'.__('Counting Category','bim-ba').'</th>
+				<th>'.__('Project','bim-ba').'</th>
+				<th>'.__('Operator','bim-ba').'</th>
+				<th style="text-align : right">'.__('Movement','bim-ba').'</th></tr>';
 		
 		while ( $loop->have_posts() ) : $loop->the_post();
 		
 		echo '<tr><td><a href="' . get_edit_post_link() . 
-			'" title="' . __('Modify Blotter Entry','bimba') . '">' . get_the_title() . '</a></td>';
+			'" title="' . __('Modify Blotter Entry','bim-ba') . '">' . get_the_title() . '</a></td>';
 		echo '<td>' . get_the_date() . '</td>';
 		echo '<td>' . get_the_content() . '</td>';
 		
@@ -341,7 +341,7 @@ class GestudioPrimeNote{
 		
 		wp_reset_postdata();
 		
-		echo '<tr><td></td><td></td><td></td><td></td><td></td><th style="text-align : right">'.__('Balance','bimba').'</th>
+		echo '<tr><td></td><td></td><td></td><td></td><td></td><th style="text-align : right">'.__('Balance','bim-ba').'</th>
 					<th style="text-align : right">' . number_format($tot, 2) . '</th>
 					</tr>';
 		
@@ -354,7 +354,7 @@ class GestudioPrimeNote{
 		Gestudio::admin_login_msg();
 		
 		if ( !isset($_POST['gstu-pn-query']) OR $_POST['gstu-pn-query'] <> $this->inspect) {//hai fatto richiesta?
-			echo __('To search a Blotter Entry, select Project and/or Operator OR time range and/or Counting Category and/or keyword, then press','bimba'). ' "' . $this->inspect . '".';
+			echo __('To search a Blotter Entry, select Project and/or Operator OR time range and/or Counting Category and/or keyword, then press','bim-ba'). ' "' . $this->inspect . '".';
 			return;
 		}
 		
@@ -445,9 +445,9 @@ class GestudioPrimeNote{
 			
 			echo '<table>';
 			
-			echo '<tr><td style="text-align : left"><label for="Dopo_di">' . __(' Bottom Limit:','bimba') . '</label></td>
+			echo '<tr><td style="text-align : left"><label for="Dopo_di">' . __(' Bottom Limit:','bim-ba') . '</label></td>
 			<td><select id="Dopo_di_anno" name="Dopo_di_anno" >
-			<option value="1900">' . __('-Select Year-','bimba') . '</option>';
+			<option value="1900">' . __('-Select Year-','bim-ba') . '</option>';
 			
 			$this->lista_anni();
 			
@@ -457,9 +457,9 @@ class GestudioPrimeNote{
 			
 			echo'</td></tr>';
 			
-			echo '<tr><td style="text-align : left"><label for="Prima_di">' . __('Upper Limit:','bimba') . '</label></td>
+			echo '<tr><td style="text-align : left"><label for="Prima_di">' . __('Upper Limit:','bim-ba') . '</label></td>
 			<td><select id="Prima_di_anno" name="Prima_di_anno" >
-			<option value="2036">' . __('-Select Year-','bimba') . '</option>';
+			<option value="2036">' . __('-Select Year-','bim-ba') . '</option>';
 			
 			$this->lista_anni();
 			
@@ -478,9 +478,9 @@ class GestudioPrimeNote{
 			
 			$terms= get_terms($taxonomy, $args);
 			
-			echo '<tr><td style="text-align : left"><label for="Categoria">' . __('Counting Category:','bimba') . '</label></td>
+			echo '<tr><td style="text-align : left"><label for="Categoria">' . __('Counting Category:','bim-ba') . '</label></td>
 			<td><select id="Categoria" name="Categoria" >
-			<option value="0">' . __('-Select Category-','bimba') . '</option>';
+			<option value="0">' . __('-Select Category-','bim-ba') . '</option>';
 			
 			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
 				foreach($terms as $term){			
@@ -490,7 +490,7 @@ class GestudioPrimeNote{
 		
 			echo '</select></td><td></td></tr>';
 			
-			echo '<tr><td style="text-align : left"><label for="Testo">' . __('Search Text:','bimba') . '</label></td>
+			echo '<tr><td style="text-align : left"><label for="Testo">' . __('Search Text:','bim-ba') . '</label></td>
 			<td colspan="2"><input id="Testo" name="Testo" type="text" size="35"/></td></tr></table><hr>';
 			
 			echo '<p></p>';
@@ -512,7 +512,7 @@ class GestudioPrimeNote{
 		
 		$mesi = Gestudio::array_mesi();
 		
-		echo '<option value="1">' . __('-Select Month-','bimba') . '</option>';
+		echo '<option value="1">' . __('-Select Month-','bim-ba') . '</option>';
 		for ($i = 1; $i <= 12; $i++) {
 			echo '<option value="' . $i . '">' . $mesi [$i-1] . '</option>';
 		}
@@ -520,14 +520,14 @@ class GestudioPrimeNote{
 	}
 	
 	public function ciclo_immissione( $term_name, $immissione ){
-		$in = 		__( 'Incomes' , 'bimba' );
-		$out = 		__( 'Expenses' , 'bimba' );
-		$clear = 	__( 'Clearances' , 'bimba' );
+		$in = 		__( 'Incomes' , 'bim-ba' );
+		$out = 		__( 'Expenses' , 'bim-ba' );
+		$clear = 	__( 'Clearances' , 'bim-ba' );
 		$ciclo = array ($in, $out, $in, $out, $clear, $clear);
 		if ( $term_name == $ciclo [$immissione-1] ){
 			$err = '';
 		} else {
-			$err = __('Warning: Counting Category and Movement are in conflict.' , 'bimba' );
+			$err = __('Warning: Counting Category and Movement are in conflict.' , 'bim-ba' );
 		}
 		return $err;
 	}

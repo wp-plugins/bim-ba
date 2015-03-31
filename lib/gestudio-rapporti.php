@@ -25,18 +25,18 @@ class GestudioRapporti{
 	
 		//register the Rapporti custom post type
 		$labels = array(
-			'name' => __( 'Reports', 'bimba' ),
-			'singular_name' => __( 'Report', 'bimba' ),
-			'add_new' => __( 'Add', 'bimba' ),
-			'add_new_item' => __( 'Add Report', 'bimba' ),
-			'edit_item' => __( 'Modify Report', 'bimba' ),
-			'new_item' => __( 'Nuovo Report', 'bimba' ),
-			'all_items' => __( '-List of Reports', 'bimba' ),
-			'view_item' => __( 'View Report', 'bimba' ),
-			'search_items' => __( 'Search Reports', 'bimba' ),
-			'not_found' =>  __( 'No Report found', 'bimba' ),
-			'not_found_in_trash' => __( 'No Report found in Trash', 'bimba' ),
-			'menu_name' => __( 'Reports', 'bimba' )
+			'name' => __( 'Reports', 'bim-ba' ),
+			'singular_name' => __( 'Report', 'bim-ba' ),
+			'add_new' => __( 'Add', 'bim-ba' ),
+			'add_new_item' => __( 'Add Report', 'bim-ba' ),
+			'edit_item' => __( 'Modify Report', 'bim-ba' ),
+			'new_item' => __( 'Nuovo Report', 'bim-ba' ),
+			'all_items' => __( '-List of Reports', 'bim-ba' ),
+			'view_item' => __( 'View Report', 'bim-ba' ),
+			'search_items' => __( 'Search Reports', 'bim-ba' ),
+			'not_found' =>  __( 'No Report found', 'bim-ba' ),
+			'not_found_in_trash' => __( 'No Report found in Trash', 'bim-ba' ),
+			'menu_name' => __( 'Reports', 'bim-ba' )
 		  );
 		
 		  $args = array(
@@ -57,7 +57,7 @@ class GestudioRapporti{
 		  
 		  register_post_type( 'gstu-rapporti', $args );
 		  
-		  register_taxonomy('gstu-tipi' , 'gstu-rapporti', array ( 'hierarchical' => true, 'label' => __('Type of Report', 'bimba' ),
+		  register_taxonomy('gstu-tipi' , 'gstu-rapporti', array ( 'hierarchical' => true, 'label' => __('Type of Report', 'bim-ba' ),
 		  'query-var' => true,'rewrite' => true));
 		  
 		  $this->array_opr_no_cmt = Gestudio::array_lista_opr_no_cmt();
@@ -75,7 +75,7 @@ class GestudioRapporti{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Inspect Reports',
-		__('Inspect Reports', 'bimba'),
+		__('Inspect Reports', 'bim-ba'),
 		'manage_options',
 		'gestudio_rpp_src_page',
 		array( $this, 'gestudio_rpp_ricerca_page' )
@@ -87,7 +87,7 @@ class GestudioRapporti{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Tipi',
-		__('-Types of Report', 'bimba'),
+		__('-Types of Report', 'bim-ba'),
 		'manage_options',
 		'edit-tags.php?taxonomy=gstu-tipi&post_type=gstu-rapporti'
 		);
@@ -97,7 +97,7 @@ class GestudioRapporti{
 		
 		
 		// create our custom meta box
-		add_meta_box( 'gestudio_rpp_meta', __( 'Report Data','bimba' ), array ( $this, 'gestudio_rpp_meta_box'), 'gstu-rapporti', 'side', 'default' );
+		add_meta_box( 'gestudio_rpp_meta', __( 'Report Data','bim-ba' ), array ( $this, 'gestudio_rpp_meta_box'), 'gstu-rapporti', 'side', 'default' );
 	
 	}
 	
@@ -117,10 +117,10 @@ class GestudioRapporti{
 		}
 		
 		echo '<form>';// display meta box form
-		echo '<label for="operatore">'.__('Operator', 'bimba' ).'</label>';
+		echo '<label for="operatore">'.__('Operator', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<select id="operatore" name="operatore" >';
-		echo '<option value="">' . __('-Select Operator-','bimba') . '</option>';
+		echo '<option value="">' . __('-Select Operator-','bim-ba') . '</option>';
 		
 			foreach ( $this->array_opr_no_cmt as $opr){
 				echo '<option value="' . $opr . '"' . selected($this->operatore, $opr, false) . '>' . $opr . '</option>';
@@ -129,10 +129,10 @@ class GestudioRapporti{
 		echo '</select>';
 		echo '<br>';
 		
-		echo '<label for="lavoro">'.__('Project', 'bimba' ).'</label>';
+		echo '<label for="lavoro">'.__('Project', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<select id="lavoro" name="lavoro" >';
-		echo '<option value="">' . __('-Select Project-','bimba') . '</option>';
+		echo '<option value="">' . __('-Select Project-','bim-ba') . '</option>';
 		
 		foreach ( $this->array_lav as $lav ){
 			echo '<option value="' . $lav . '"' . selected($this->lavoro, $lav, false) . '>' . $lav . '</option>';
@@ -140,19 +140,19 @@ class GestudioRapporti{
 		
 		echo '</select><hr>';
 		
-		echo '<label for="imponibile">'.__('Taxable', 'bimba' ).'</label>';
+		echo '<label for="imponibile">'.__('Taxable', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<input id="imponibile" name="imponibile" type="number" step="0.01" value="'.$imponibile.'"/>';
 		echo '<br>';
-		echo '<label for="contributi">'.__('Superannuations (%)', 'bimba' ).'</label>';
+		echo '<label for="contributi">'.__('Superannuations (%)', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<input id="contributi" name="contributi" type="number" step="0.01" value="'.$contributi.'"/>';
 		echo '<br>';
-		echo '<label for="iva">'.__('VAT (%)', 'bimba' ).'</label>';
+		echo '<label for="iva">'.__('VAT (%)', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<input id="iva" name="iva" type="number" value="'.$iva.'"/>';
 		echo '<br>';
-		echo '<label for="ritenuta">'.__("Withholding (%)", 'bimba' ).'</label>';
+		echo '<label for="ritenuta">'.__("Withholding (%)", 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<input id="ritenuta" name="ritenuta" type="number" value="'.$ritenuta.'"/>';
 		//nonce field for security
@@ -206,7 +206,7 @@ class GestudioRapporti{
 	
 	public function gestudio_rpp_ricerca_page(){
 		
-		echo '<h2>' . __('Inspect Reports.', 'bimba') . '</h2>';
+		echo '<h2>' . __('Inspect Reports.', 'bim-ba') . '</h2>';
 		
 		$args_rpp = array(
 				'post_type' => array( 'gstu-rapporti' ),
@@ -220,12 +220,12 @@ class GestudioRapporti{
 			$showbalance = 1;//ci sono lavori, stampa il bilancio
 			
 			echo '<br><table class="wp-list-table widefat fixed striped posts">';
-			echo '<tr><th>' . __('Report' , 'bimba' ) . '</th><th>'
-					. __('Type' , 'bimba' ) . '</th><th>'
-					. __('Date' , 'bimba' ) . '</th><th>'
-					. __('Operator' , 'bimba' ) . '</th><th>'
-					. __('Project' , 'bimba' ) . '</th><th style="text-align : right">'
-					. __('Amount' , 'bimba' ) . '</th></tr>';
+			echo '<tr><th>' . __('Report' , 'bim-ba' ) . '</th><th>'
+					. __('Type' , 'bim-ba' ) . '</th><th>'
+					. __('Date' , 'bim-ba' ) . '</th><th>'
+					. __('Operator' , 'bim-ba' ) . '</th><th>'
+					. __('Project' , 'bim-ba' ) . '</th><th style="text-align : right">'
+					. __('Amount' , 'bim-ba' ) . '</th></tr>';
 				
 			while ( $loop_rpp->have_posts() ) : $loop_rpp->the_post();
 			$this->operatore = get_post_meta( $loop_rpp->post->ID, '_gstu_rpp_meta_opr', true );
@@ -241,7 +241,7 @@ class GestudioRapporti{
 			$importo = Gestudio::is_invoice($categoria, $importo);
 				
 			echo '<tr><td><a href="' . get_edit_post_link() .
-			'" title="' . __('Modify Report','bimba') . '">'
+			'" title="' . __('Modify Report','bim-ba') . '">'
 					. get_the_title() . '</td><td>' 
 					. $categoria . '</td><td>' 
 					. get_the_date() . '</td><td>'
@@ -254,7 +254,7 @@ class GestudioRapporti{
 				
 		} else {
 			$showbalance = 0;
-			echo __('At the moment, no Reports to Inspect.', 'bimba');
+			echo __('At the moment, no Reports to Inspect.', 'bim-ba');
 		}
 		
 		wp_reset_postdata();
@@ -275,12 +275,12 @@ class GestudioRapporti{
 		
 		$errore = '';
 		
-		if ($tipo AND $tipo == __('Invoice', 'bimba')){
+		if ($tipo AND $tipo == __('Invoice', 'bim-ba')){
 			
 			$ruolo = $this->array_ruoli_opr [ $this->operatore ];
 				
-			if ($ruolo == __('Studio', 'bimba') OR $ruolo == __('Collaboratore', 'bimba')){
-				$errore = __('Warning: if Invoice belongs to the countancy of the Studio, use Blotter Entry, not a Report.', 'bimba');
+			if ($ruolo == __('Studio', 'bim-ba') OR $ruolo == __('Collaboratore', 'bim-ba')){
+				$errore = __('Warning: if Invoice belongs to the countancy of the Studio, use Blotter Entry, not a Report.', 'bim-ba');
 			}
 		}
 		return $errore;

@@ -31,7 +31,7 @@ class GestudioSettingsPage
     {
     	add_menu_page(
     	'Gestudio Settings Page',
-    	__('Manage Studio', 'bimba'),
+    	__('Manage Studio', 'bim-ba'),
     	'manage_options',
     	'gestudio-settings-page',
     	array( $this, 'gestudio_settings_page' ),
@@ -48,7 +48,7 @@ class GestudioSettingsPage
     	add_submenu_page(
     	'gestudio-settings-page',
     	'Impostazioni',
-    	__('-Studio Settings', 'bimba'),
+    	__('-Studio Settings', 'bim-ba'),
     	'manage_options',
     	'gestudio-impostazioni-page',
     	array( $this, 'gestudio_impostazioni_page' )
@@ -60,13 +60,13 @@ class GestudioSettingsPage
      */
     public function gestudio_settings_page()
     {
-    	echo '<h2>' . __('Gestione Studio.', 'bimba') . '</h2><br>';
+    	echo '<h2>' . __('Gestione Studio.', 'bim-ba') . '</h2><br>';
     	
     	$this->gstu_options = get_option( 'gestudio_option_name' );
     	
     	if (! $this->gstu_options['operatore'] ){
-    		echo __("Warning: you didn't select the Operator the accountancy is related to.", 'bimba');
-    		echo '<p><a href="' . admin_url( 'admin.php?page=gestudio-impostazioni-page' ) . '">' . __('Studio Settings', 'bimba') . '</a></p>';
+    		echo __("Warning: you didn't select the Operator the accountancy is related to.", 'bim-ba');
+    		echo '<p><a href="' . admin_url( 'admin.php?page=gestudio-impostazioni-page' ) . '">' . __('Studio Settings', 'bim-ba') . '</a></p>';
     	} else {
     		$this->data_ultima = Gestudio::data_ultima_prima_nota();
     		 
@@ -76,7 +76,7 @@ class GestudioSettingsPage
     		 
     		$this->spese_tot = $this->spese_fisse_mensili();
     		 
-    		echo __("Fixed Monthly Expenses in the last Year: ", 'bimba') . number_format( $this->spese_tot / 12 , 2) . '<p></p>';
+    		echo __("Fixed Monthly Expenses in the last Year: ", 'bim-ba') . number_format( $this->spese_tot / 12 , 2) . '<p></p>';
     		 
     		$this->gestudio_lav_generali();
     	}
@@ -90,14 +90,14 @@ class GestudioSettingsPage
     	echo '<form method="post" action="options.php">';
     	settings_fields( 'gestudio_option_group' );
     	do_settings_sections( 'gestudio-settings-page' );
-    	submit_button(__('Save Settings', 'bimba'));
+    	submit_button(__('Save Settings', 'bim-ba'));
     	echo '</form><hr>';
     	
     	echo '<ul>';
-    	echo '<li><a href="' . admin_url( 'edit.php?post_type=gstu-lavori' ) . '">' . __('List of all Projects', 'bimba') . '</a></li>';
-    	echo '<li><a href="' . admin_url( 'edit.php?post_type=gstu-operatori' ) . '">' . __('List of all Operators', 'bimba') . '</a></li>';
-    	echo '<li><a href="' . admin_url( 'edit.php?post_type=gstu-rapporti' ) . '">' . __('List of all Reports', 'bimba') . '</a></li>';
-    	echo '<li><a href="' . admin_url( 'edit.php?post_type=prime-note' ) . '">' . __('List of all Blotter Entries', 'bimba') . '</a></li>';
+    	echo '<li><a href="' . admin_url( 'edit.php?post_type=gstu-lavori' ) . '">' . __('List of all Projects', 'bim-ba') . '</a></li>';
+    	echo '<li><a href="' . admin_url( 'edit.php?post_type=gstu-operatori' ) . '">' . __('List of all Operators', 'bim-ba') . '</a></li>';
+    	echo '<li><a href="' . admin_url( 'edit.php?post_type=gstu-rapporti' ) . '">' . __('List of all Reports', 'bim-ba') . '</a></li>';
+    	echo '<li><a href="' . admin_url( 'edit.php?post_type=prime-note' ) . '">' . __('List of all Blotter Entries', 'bim-ba') . '</a></li>';
     	echo '</ul>';
     }
     
@@ -111,14 +111,14 @@ class GestudioSettingsPage
     
     	add_settings_section(
     	'setting_section_id', // ID
-    	__('Studio Settings', 'bimba'), // Title
+    	__('Studio Settings', 'bim-ba'), // Title
     	array( $this, 'print_section_info' ), // Callback
     	'gestudio-settings-page' // Page
     	);
     	 
     	add_settings_field(
     	'operatore', // ID
-    	__('Operator', 'bimba'), // Title
+    	__('Operator', 'bim-ba'), // Title
     	array( $this, 'operatore_callback' ), // Callback
     	'gestudio-settings-page', // Page
     	'setting_section_id' // Section
@@ -126,7 +126,7 @@ class GestudioSettingsPage
     	
     	add_settings_field(
     	'spese-fisse', // ID
-    	__('Fixed Expenses', 'bimba'), // Title
+    	__('Fixed Expenses', 'bim-ba'), // Title
     	array( $this, 'spese_fisse_callback' ), // Callback
     	'gestudio-settings-page', // Page
     	'setting_section_id' // Section
@@ -157,7 +157,7 @@ class GestudioSettingsPage
     
     public function print_section_info()
     {
-    	print __("Select an Operator with Role 'Studio' the accountancy is related to (create it if necessary), then check the le Counting Categories that build up Fixed Expenses:", 'bimba');
+    	print __("Select an Operator with Role 'Studio' the accountancy is related to (create it if necessary), then check the le Counting Categories that build up Fixed Expenses:", 'bim-ba');
     }
     
     public function operatore_callback()
@@ -169,7 +169,7 @@ class GestudioSettingsPage
     		
     	if ( $loop->have_posts() ){
     		echo '<select id="operatore" name="gestudio_option_name[operatore]">';
-    		echo '<option value="">' . __('-Select Operator-', 'bimba') . '</option>';
+    		echo '<option value="">' . __('-Select Operator-', 'bim-ba') . '</option>';
     		while ( $loop->have_posts() ) : $loop->the_post();
     			$title = $loop->post->post_title;
     			
@@ -263,10 +263,10 @@ class GestudioSettingsPage
     		$showbalance = 1;//ci sono lavori, stampa il bilancio
     		
     		echo '<table class="wp-list-table widefat fixed striped posts"><tr><th>'
-    				. __('Project' , 'bimba' ) . '</th><th>'
-    				. __('Client' , 'bimba' ) . '</th><th>'
-    				. __('Scheduled Deadline' , 'bimba' ) . '</th><th style="text-align : right">'
-    				. __('Forecast Incomes ' , 'bimba' ) . $this->gstu_options ['operatore'] . '</th></tr>';
+    				. __('Project' , 'bim-ba' ) . '</th><th>'
+    				. __('Client' , 'bim-ba' ) . '</th><th>'
+    				. __('Scheduled Deadline' , 'bim-ba' ) . '</th><th style="text-align : right">'
+    				. __('Forecast Incomes ' , 'bim-ba' ) . $this->gstu_options ['operatore'] . '</th></tr>';
     		
     		while ( $loop_lav->have_posts() ) : $loop_lav->the_post();
     			
@@ -347,7 +347,7 @@ class GestudioSettingsPage
 	    			}
 	    			wp_reset_postdata();
 	    			
-	    			if ($ruolo <> __('Contractor','bimba') ){
+	    			if ($ruolo <> __('Contractor','bim-ba') ){
 	    				if ($this->operatore == $this->gstu_options ['operatore']){
 	    					$super_tot = $super_tot + $tot;
 	    				} else {
@@ -370,7 +370,7 @@ class GestudioSettingsPage
     		endwhile;
     	} else {
     		$showbalance = 0;
-    		echo __('At the moment, no Balance may be forecast (not enough data).', 'bimba');
+    		echo __('At the moment, no Balance may be forecast (not enough data).', 'bim-ba');
     	}
     	
     	wp_reset_postdata();
@@ -385,13 +385,13 @@ class GestudioSettingsPage
     			$months++;
     		 
     		echo '<tr><td></td><td></td><th style="text-align : right">'
-    				. __('Total Forecast Incomes ' , 'bimba' ) . $this->gstu_options ['operatore'] . '</th><td style="text-align : right">'
+    				. __('Total Forecast Incomes ' , 'bim-ba' ) . $this->gstu_options ['operatore'] . '</th><td style="text-align : right">'
     						. number_format($super_super_tot, 2) . '</td></tr>';
     		echo '<tr><td></td><th>'
-    				. __('Deadline of all Projects ' , 'bimba' ) . '</th><td>'
+    				. __('Deadline of all Projects ' , 'bim-ba' ) . '</th><td>'
     						. $super_finale . '</td><td></td></tr>';
     		echo '<tr><td></td><td></td><th style="text-align : right">'
-    				. __('Fixed Expenses at that date ' , 'bimba' ) . '</th><td style="text-align : right">'
+    				. __('Fixed Expenses at that date ' , 'bim-ba' ) . '</th><td style="text-align : right">'
     						. number_format($months * $this->spese_tot / 12, 2) . '</td></tr>';
     		echo '<tr><td></td><td></td>' . Gestudio::footer_table_bilancio($super_super_tot - $months * $this->spese_tot /12) . '</tr>';
     		

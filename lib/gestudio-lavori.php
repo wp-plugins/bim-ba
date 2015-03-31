@@ -22,18 +22,18 @@ class GestudioLavori{
 	
 		//register the Lavori custom post type
 		$labels = array(
-			'name' => __( 'Projects', 'bimba' ),
-			'singular_name' => __( 'Project', 'bimba' ),
-			'add_new' => __( 'Add', 'bimba' ),
-			'add_new_item' => __( 'Add Project', 'bimba' ),
-			'edit_item' => __( 'Modify Project', 'bimba' ),
-			'new_item' => __( 'New Project', 'bimba' ),
-			'all_items' => __( '-List of Projects', 'bimba' ),
-			'view_item' => __( 'View Project', 'bimba' ),
-			'search_items' => __( 'Search Lavori', 'bimba' ),
-			'not_found' =>  __( 'No Project found', 'bimba' ),
-			'not_found_in_trash' => __( 'No Project found in Trash', 'bimba' ),
-			'menu_name' => __( 'Projects', 'bimba' )
+			'name' => __( 'Projects', 'bim-ba' ),
+			'singular_name' => __( 'Project', 'bim-ba' ),
+			'add_new' => __( 'Add', 'bim-ba' ),
+			'add_new_item' => __( 'Add Project', 'bim-ba' ),
+			'edit_item' => __( 'Modify Project', 'bim-ba' ),
+			'new_item' => __( 'New Project', 'bim-ba' ),
+			'all_items' => __( '-List of Projects', 'bim-ba' ),
+			'view_item' => __( 'View Project', 'bim-ba' ),
+			'search_items' => __( 'Search Lavori', 'bim-ba' ),
+			'not_found' =>  __( 'No Project found', 'bim-ba' ),
+			'not_found_in_trash' => __( 'No Project found in Trash', 'bim-ba' ),
+			'menu_name' => __( 'Projects', 'bim-ba' )
 		  );
 		
 		  $args = array(
@@ -54,7 +54,7 @@ class GestudioLavori{
 		  
 		  register_post_type( 'gstu-lavori', $args );
 		  
-		  register_taxonomy('gstu-fasi' , 'gstu-lavori', array ( 'hierarchical' => true, 'label' => __('Project Phase', 'bimba' ),
+		  register_taxonomy('gstu-fasi' , 'gstu-lavori', array ( 'hierarchical' => true, 'label' => __('Project Phase', 'bim-ba' ),
 		  'query-var' => true,'rewrite' => true));
 		  
 		  $this->array_cmt = Gestudio::array_lista_cmt();
@@ -70,7 +70,7 @@ class GestudioLavori{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Inspect Project',
-		__('Inspect Project', 'bimba'),
+		__('Inspect Project', 'bim-ba'),
 		'manage_options',
 		'gestudio_lav_src_page',
 		array( $this, 'gestudio_lav_ricerca_page' )
@@ -82,7 +82,7 @@ class GestudioLavori{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Fasi',
-		__('-Project Phases', 'bimba'),
+		__('-Project Phases', 'bim-ba'),
 		'manage_options',
 		'edit-tags.php?taxonomy=gstu-fasi&post_type=gstu-lavori'
 		);
@@ -91,7 +91,7 @@ class GestudioLavori{
 	public function gestudio_lav_register_meta_box() {
 	
 		// create our custom meta box
-		add_meta_box( 'gestudio_lav_meta', __( 'Client/Timing','bimba' ), array ( $this, 'gestudio_lav_meta_box'), 'gstu-lavori', 'side', 'default' );
+		add_meta_box( 'gestudio_lav_meta', __( 'Client/Timing','bim-ba' ), array ( $this, 'gestudio_lav_meta_box'), 'gstu-lavori', 'side', 'default' );
 	
 	}
 	
@@ -105,10 +105,10 @@ class GestudioLavori{
 		}
 		
 		echo '<form>';// display meta box form
-		echo '<label for="committente">'.__('Client', 'bimba' ).'</label>';
+		echo '<label for="committente">'.__('Client', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<select id="committente" name="committente" >';
-		echo '<option value="">' . __('-Select Client-','bimba') . '</option>';
+		echo '<option value="">' . __('-Select Client-','bim-ba') . '</option>';
 		
 		foreach ( $this->array_cmt as $cmt){
 			echo '<option value="' . $cmt . '"' . selected($committente, $cmt, false) . '>' . $cmt . '</option>';
@@ -118,10 +118,10 @@ class GestudioLavori{
 		$fiveyears = date('Y', strtotime('+5 years'));
 		
 		echo '</select><hr>';
-		echo '<label for="anno">'.__('Scheduled Deadline', 'bimba' ).'</label>';
+		echo '<label for="anno">'.__('Scheduled Deadline', 'bim-ba' ).'</label>';
 		echo '<br>';
 		echo '<select id="anno" name="anno" >';
-		echo '<option value="' . $nowyear . '">' . __('-Select Year-','bimba') . '</option>';
+		echo '<option value="' . $nowyear . '">' . __('-Select Year-','bim-ba') . '</option>';
 		for ($i = $nowyear; $i <= $fiveyears; $i++) {
 			echo '<option value="' . $i . '"' . selected($anno, $i, false) . '>' . $i . '</option>';
 		}
@@ -130,7 +130,7 @@ class GestudioLavori{
 		$mesi = Gestudio::array_mesi();//to do, spostare automaticamente la data di fine lavori?
 		
 		echo '<select id="mese" name="mese" >';
-		echo '<option value="1">' . __('-Select Month-','bimba') . '</option>';
+		echo '<option value="1">' . __('-Select Month-','bim-ba') . '</option>';
 		for ($i = 1; $i <= 12; $i++) {
 			echo '<option value="' . $i . '"' . selected($mese, $i, false) . '>' . $mesi [$i-1] . '</option>';
 		}
@@ -182,9 +182,9 @@ class GestudioLavori{
 	public function gestudio_lav_ricerca_page(){
 		
 		$this->gstu_options = get_option( 'gestudio_option_name' );
-		$this->inspect = __('Inspect', 'bimba');
+		$this->inspect = __('Inspect', 'bim-ba');
 		
-		echo '<h2>' . __('Inspect Project','bimba') . '</h2>';
+		echo '<h2>' . __('Inspect Project','bim-ba') . '</h2>';
 		
 		$lavoro = $this->gestudio_lav_controllo();
 		
@@ -210,10 +210,10 @@ class GestudioLavori{
 			$annomese = Gestudio::tempistica_anno_mese( $tempistica );
 			
 			echo '<table class="wp-list-table widefat fixed striped posts"><tr><th>'
-					. __('Project' , 'bimba' ) . '</th><th>'
-				 	. __('Client' , 'bimba' ) . '</th><th>'
-				 	. __('Scheduled Deadline' , 'bimba' ) . '</th></tr><tr><td>'
-				 	. edit_post_link( __('Modify Project','bimba'), '', '', $page->ID ) 
+					. __('Project' , 'bim-ba' ) . '</th><th>'
+				 	. __('Client' , 'bim-ba' ) . '</th><th>'
+				 	. __('Scheduled Deadline' , 'bim-ba' ) . '</th></tr><tr><td>'
+				 	. edit_post_link( __('Modify Project','bim-ba'), '', '', $page->ID ) 
 				 	. $lavoro . '</td><td>' . $committente . '</td><td>' . $annomese .	'</td></tr></table>';
 			
 			$super_tot = 0;
@@ -254,7 +254,7 @@ class GestudioLavori{
 					$importo = Gestudio::is_invoice($categoria, $importo);
 					
 					echo '<tr><td>' . $operatore . '</td><td>' . $ruolo . '</td><td><a href="' . get_edit_post_link() . 
-			'" title="' . __('Modify Report','bimba') . '">' 
+			'" title="' . __('Modify Report','bim-ba') . '">' 
 								. get_the_title() . '</td><td>' . $categoria . '</td><td>' . get_the_date() . '</td><td style="text-align : right">' 
 								. number_format($importo, 2) . '</td></tr>';
 					$tot = $tot + $importo;
@@ -289,7 +289,7 @@ class GestudioLavori{
 					$categoria = Gestudio::cerca_termine( $terms );
 					
 					echo '<tr><td>' . $operatore . '</td><td>' . $ruolo . '</td><td><a href="' . get_edit_post_link() . 
-			'" title="' . __('Modify Blotter Entry','bimba') . '">' 
+			'" title="' . __('Modify Blotter Entry','bim-ba') . '">' 
 								. get_the_title() . '</td><td>' . $categoria . '</td><td>' . get_the_date() . '</td><td style="text-align : right">' 
 								. number_format(-$importo, 2) . '</td></tr>';
 					$tot = $tot - $importo;
@@ -302,7 +302,7 @@ class GestudioLavori{
 					echo '<tr><td></td><td></td><td></td><td></td>' . Gestudio::footer_table_bilancio($tot) . '</tr>';
 				}
 				echo '</table>';
-				if ($ruolo <> __('Contractor','bimba') ){
+				if ($ruolo <> __('Contractor','bim-ba') ){
 					if ($operatore == $this->gstu_options ['operatore']){
 						$super_tot = $super_tot + $tot;
 					} else {
@@ -325,7 +325,7 @@ class GestudioLavori{
 		Gestudio::admin_login_msg();
 	
 		if ( !isset($_POST['gstu-lav-query']) OR $_POST['gstu-lav-query'] <> $this->inspect ) {//hai fatto richiesta?
-			echo __('To inspect a Project, select from dropdown list and press','bimba') . ' "' . $this->inspect . '".';
+			echo __('To inspect a Project, select from dropdown list and press','bim-ba') . ' "' . $this->inspect . '".';
 			return;
 		}
 	

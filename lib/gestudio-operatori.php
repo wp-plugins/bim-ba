@@ -18,18 +18,18 @@ class GestudioOperatori{
 	
 		//register the operatori custom post type
 		$labels = array(
-			'name' => __( 'Operators', 'bimba' ),
-			'singular_name' => __( 'Operator', 'bimba' ),
-			'add_new' => __( 'Add', 'bimba' ),
-			'add_new_item' => __( 'Add Operator', 'bimba' ),
-			'edit_item' => __( 'Modify Operator', 'bimba' ),
-			'new_item' => __( 'New Operator', 'bimba' ),
-			'all_items' => __( '-List of Operators', 'bimba' ),
-			'view_item' => __( 'View Operator', 'bimba' ),
-			'search_items' => __( 'Search Operators', 'bimba' ),
-			'not_found' =>  __( 'No Operator found', 'bimba' ),
-			'not_found_in_trash' => __( 'No Operator found in Trash', 'bimba' ),
-			'menu_name' => __( 'Operators', 'bimba' )
+			'name' => __( 'Operators', 'bim-ba' ),
+			'singular_name' => __( 'Operator', 'bim-ba' ),
+			'add_new' => __( 'Add', 'bim-ba' ),
+			'add_new_item' => __( 'Add Operator', 'bim-ba' ),
+			'edit_item' => __( 'Modify Operator', 'bim-ba' ),
+			'new_item' => __( 'New Operator', 'bim-ba' ),
+			'all_items' => __( '-List of Operators', 'bim-ba' ),
+			'view_item' => __( 'View Operator', 'bim-ba' ),
+			'search_items' => __( 'Search Operators', 'bim-ba' ),
+			'not_found' =>  __( 'No Operator found', 'bim-ba' ),
+			'not_found_in_trash' => __( 'No Operator found in Trash', 'bim-ba' ),
+			'menu_name' => __( 'Operators', 'bim-ba' )
 		  );
 		
 		  $args = array(
@@ -50,7 +50,7 @@ class GestudioOperatori{
 		  
 		  register_post_type( 'gstu-operatori', $args );
 		  
-		  register_taxonomy('gstu-ruoli' , 'gstu-operatori', array ( 'hierarchical' => true, 'label' => __("Role of Operator", 'bimba' ),
+		  register_taxonomy('gstu-ruoli' , 'gstu-operatori', array ( 'hierarchical' => true, 'label' => __("Role of Operator", 'bim-ba' ),
 		  'query-var' => true,'rewrite' => true));
 	
 	}
@@ -64,7 +64,7 @@ class GestudioOperatori{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Inspect Operators',
-		__('Inspect Operator', 'bimba'),
+		__('Inspect Operator', 'bim-ba'),
 		'manage_options',
 		'gestudio_opr_src_page',
 		array( $this, 'gestudio_opr_ricerca_page' )
@@ -76,7 +76,7 @@ class GestudioOperatori{
 		add_submenu_page(
 		'gestudio-settings-page',
 		'Ruoli',
-		__("-Roles of Operator", 'bimba'),
+		__("-Roles of Operator", 'bim-ba'),
 		'manage_options',
 		'edit-tags.php?taxonomy=gstu-ruoli&post_type=gstu-operatori'
 		);
@@ -85,9 +85,9 @@ class GestudioOperatori{
 	public function gestudio_opr_ricerca_page(){
 		
 		$this->gstu_options = get_option( 'gestudio_option_name' );
-		$this->inspect = __('Inspect', 'bimba');
+		$this->inspect = __('Inspect', 'bim-ba');
 		
-		echo '<h2>' . __('Inspect Operator','bimba') . '</h2>';
+		echo '<h2>' . __('Inspect Operator','bim-ba') . '</h2>';
 	
 		$operatore = $this->gestudio_opr_controlli();//controllo sul submit
 		
@@ -113,12 +113,12 @@ class GestudioOperatori{
 			$ruolo = Gestudio::cerca_termine($terms);
 			
 			echo '<table class="wp-list-table widefat fixed striped posts"><tr><th>' 
-					. __('Operator' , 'bimba' ) . '</th><th>'
-					. __('Role' , 'bimba' ) . '</th></tr><tr><td>'
-					. edit_post_link( __('Modify Operator','bimba'), '', '', $page->ID ) 
+					. __('Operator' , 'bim-ba' ) . '</th><th>'
+					. __('Role' , 'bim-ba' ) . '</th></tr><tr><td>'
+					. edit_post_link( __('Modify Operator','bim-ba'), '', '', $page->ID ) 
 					. $operatore . '</td><td>' . $ruolo . '</td></tr></table>';
 			
-			if ($ruolo == __('Client' , 'bimba' ) ){
+			if ($ruolo == __('Client' , 'bim-ba' ) ){
 				
 				$args_lav1 = Gestudio::args_lav_dato_cmt($operatore);
 
@@ -126,8 +126,8 @@ class GestudioOperatori{
 				if ( $loop_lav1->have_posts() ){
 					
 					echo '<br><table class="wp-list-table widefat fixed striped posts"><tr><th>'
-							. __('Project' , 'bimba' ) . '</th><th>'
-							. __('Scheduled Deadline' , 'bimba' ) . '</th></tr>';
+							. __('Project' , 'bim-ba' ) . '</th><th>'
+							. __('Scheduled Deadline' , 'bim-ba' ) . '</th></tr>';
 						
 					while ( $loop_lav1->have_posts() ) : $loop_lav1->the_post();
 					$lavoro1 = get_the_title();
@@ -183,7 +183,7 @@ class GestudioOperatori{
 						
 					echo '<tr><td>' . $lavoro . '</td><td><a href="' 
 							. get_edit_post_link() . '" title="' 
-							. __('Modify Report','bimba') . '">'
+							. __('Modify Report','bim-ba') . '">'
 							. get_the_title() . '</td><td>' 
 							. $categoria . '</td><td>' 
 							. get_the_date() . '</td><td style="text-align : right">'
@@ -220,7 +220,7 @@ class GestudioOperatori{
 					$categoria = Gestudio::cerca_termine($terms);
 					
 					echo '<tr><td>' . $lavoro . '</td><td><a href="' . get_edit_post_link() . '" title="' 
-							. __('Modify Blotter Entry','bimba') . '">'
+							. __('Modify Blotter Entry','bim-ba') . '">'
 							. get_the_title() . '</td><td>' 
 							. $categoria . '</td><td>' 
 							. get_the_date() . '</td><td style="text-align : right">'
@@ -252,7 +252,7 @@ class GestudioOperatori{
 		Gestudio::admin_login_msg();
 	
 		if ( !isset($_POST['gstu-opr-query']) OR $_POST['gstu-opr-query'] <> $this->inspect ){//hai fatto richiesta?
-			echo __('To inspect an Operator, select from dropdown list and press','bimba') . ' "' . $this->inspect . '".';
+			echo __('To inspect an Operator, select from dropdown list and press','bim-ba') . ' "' . $this->inspect . '".';
 			return;
 		}
 	

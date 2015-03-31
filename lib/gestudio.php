@@ -2,15 +2,15 @@
 class Gestudio{
 	
 	public function select_operatori(){
-		echo '<tr><td style="text-align : left"><label for="Operatore">' . __('Operator:','bimba') . '</label></td>
+		echo '<tr><td style="text-align : left"><label for="Operatore">' . __('Operator:','bim-ba') . '</label></td>
 		<td><select id="Operatore" name="Operatore" >
-		<option value="0">' . __('-Select Operator-','bimba') . '</option>';
+		<option value="0">' . __('-Select Operator-','bim-ba') . '</option>';
 	}
 	
 	public function select_lavori(){
-		echo '<tr><td style="text-align : left"><label for="Lavoro">' . __('Project:','bimba') . '</label></td>
+		echo '<tr><td style="text-align : left"><label for="Lavoro">' . __('Project:','bim-ba') . '</label></td>
 		<td><select id="Lavoro" name="Lavoro" >
-		<option value="0">' . __('-Select Project-','bimba') . '</option>';
+		<option value="0">' . __('-Select Project-','bim-ba') . '</option>';
 	}
 	
 	public function select_lista_a_tendina( $cpt ){
@@ -37,7 +37,7 @@ class Gestudio{
 	
 	public function inspect_button($inspect, $input_name){
 		echo '<input type="submit" value="' . $inspect . '" name="' . $input_name . '" />
-		<input type="reset" value="' . __('Reset','bimba') . '" /><p>';
+		<input type="reset" value="' . __('Reset','bim-ba') . '" /><p>';
 	}
 	
 	public function cerca_termine($terms){
@@ -72,7 +72,7 @@ class Gestudio{
 							array(
 									'taxonomy' => 'gstu-ruoli',
 									'field' => 'name',
-									'terms' => __('Client', 'bimba'),
+									'terms' => __('Client', 'bim-ba'),
 									'operator' => 'NOT IN'
 							)
 					)
@@ -198,7 +198,7 @@ class Gestudio{
 						array(
 								'taxonomy' => 'gstu-ruoli',
 								'field' => 'name',
-								'terms' => __( 'Studio', 'bimba' )
+								'terms' => __( 'Studio', 'bim-ba' )
 						)
 				)
 		);
@@ -228,39 +228,39 @@ class Gestudio{
 	
 	public function head_opr_table_rpp_pn(){
 		echo '<br><table class="wp-list-table widefat fixed striped posts">';
-		echo '<tr><th>' . __('Project' , 'bimba' ) . '</th><th>'
-				. __('Report/Blotter Entry' , 'bimba' ) . '</th><th>'
-						. __('Type/Count. Cat.' , 'bimba' ) . '</th><th>'
-								. __('Date' , 'bimba' ) . '</th><th style="text-align : right">'
-										. __('Amount' , 'bimba' ) . '</th></tr>';
+		echo '<tr><th>' . __('Project' , 'bim-ba' ) . '</th><th>'
+				. __('Report/Blotter Entry' , 'bim-ba' ) . '</th><th>'
+						. __('Type/Count. Cat.' , 'bim-ba' ) . '</th><th>'
+								. __('Date' , 'bim-ba' ) . '</th><th style="text-align : right">'
+										. __('Amount' , 'bim-ba' ) . '</th></tr>';
 	}
 	
 	public function head_lav_table_rpp_pn(){
 		echo '<br><table class="wp-list-table widefat fixed striped posts">';
-		echo '<tr><th>' . __('Operator' , 'bimba' ) . '</th><th>'
-				. __('Role' , 'bimba' ) . '</th><th>'
-						. __('Report/Blotter Entry' , 'bimba' ) . '</th><th>'
-								. __('Type/Count. Cat.' , 'bimba' ) . '</th><th>'
-										. __('Date' , 'bimba' ) . '</th><th style="text-align : right">'
-												. __('Amount' , 'bimba' ) . '</th></tr>';
+		echo '<tr><th>' . __('Operator' , 'bim-ba' ) . '</th><th>'
+				. __('Role' , 'bim-ba' ) . '</th><th>'
+						. __('Report/Blotter Entry' , 'bim-ba' ) . '</th><th>'
+								. __('Type/Count. Cat.' , 'bim-ba' ) . '</th><th>'
+										. __('Date' , 'bim-ba' ) . '</th><th style="text-align : right">'
+												. __('Amount' , 'bim-ba' ) . '</th></tr>';
 	}
 	
 	public function footer_table_bilancio($tot){
 		$output = '<th style="text-align : right">'
-							. __('Balance' , 'bimba' ) . '</th><td style="text-align : right">'
+							. __('Balance' , 'bim-ba' ) . '</th><td style="text-align : right">'
 							. number_format($tot, 2) . '</td>';
 		return $output;
 	}
 	
 	public function footer_table_previsione($operatore, $super_tot){
 		$output = '<th style="text-align : right">'
-					. __('Forecast Incomes ' , 'bimba' ) . $operatore . '</th><td style="text-align : right">'
+					. __('Forecast Incomes ' , 'bim-ba' ) . $operatore . '</th><td style="text-align : right">'
 					. number_format($super_tot, 2) . '</td>';
 		return $output;
 	}
 	
 	public function is_invoice($categoria, $importo){
-		if ($categoria == __('Invoice', 'bimba') ){
+		if ($categoria == __('Invoice', 'bim-ba') ){
 			$importo = -$importo;
 		}
 		return $importo;
@@ -268,13 +268,13 @@ class Gestudio{
 	
 	public function admin_login_msg(){
 		if (!current_user_can( 'manage_options' )){//are you administrator?
-			echo __('You must login as Administrator.','bimba');
+			echo __('You must login as Administrator.','bim-ba');
 			return;
 		}
 	}
 	
 	public function security_issue_msg(){
-		echo __('Sorry.There was a security issue.','bimba');
+		echo __('Sorry.There was a security issue.','bim-ba');
 	}
 	
 	public function tempistica_anno_mese( $tempistica ){
@@ -293,18 +293,18 @@ class Gestudio{
 	
 	public function array_mesi(){
 		$mesi = array(//questa è una ripetizione, bisognerebbe eliminarla
-				__('January','bimba'),
-				__('February','bimba'),
-				__('March','bimba'),
-				__('April','bimba'),
-				__('May','bimba'),
-				__('June','bimba'),
-				__('July','bimba'),
-				__('August','bimba'),
-				__('September','bimba'),
-				__('October','bimba'),
-				__('November','bimba'),
-				__('December','bimba')
+				__('January','bim-ba'),
+				__('February','bim-ba'),
+				__('March','bim-ba'),
+				__('April','bim-ba'),
+				__('May','bim-ba'),
+				__('June','bim-ba'),
+				__('July','bim-ba'),
+				__('August','bim-ba'),
+				__('September','bim-ba'),
+				__('October','bim-ba'),
+				__('November','bim-ba'),
+				__('December','bim-ba')
 		);
 		return $mesi;
 	}
@@ -318,7 +318,7 @@ class Gestudio{
 						array(
 								'taxonomy' => 'gstu-ruoli',
 								'field' => 'name',
-								'terms' => __('Client', 'bimba')
+								'terms' => __('Client', 'bim-ba')
 						)
 				)
 		);
@@ -405,7 +405,7 @@ class Gestudio{
 	}
 	
 	public function categorie_figlie_uscite(){
-		$parent_term_id = term_exists(__('Expenses','bimba'), 'categoria-contabile' );
+		$parent_term_id = term_exists(__('Expenses','bim-ba'), 'categoria-contabile' );
 		$args = array(
 				'orderby'           => 'id',
 				'order'             => 'ASC',
