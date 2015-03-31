@@ -1,0 +1,794 @@
+# Copyright (C) 2015 BIM_ba
+# This file is distributed under the same license as the BIM_ba package.
+msgid ""
+msgstr ""
+"Project-Id-Version: BIM_ba 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/bim-ba\n"
+"POT-Creation-Date: 2015-03-31 15:29:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: bim_ba.php:85 lib/gestudio-prime-note.php:58
+#: lib/gestudio-prime-note.php:257
+msgid "Counting Category"
+msgstr ""
+
+#: bim_ba.php:88 bim_ba.php:97 lib/gestudio-prime-note.php:524
+msgid "Incomes"
+msgstr ""
+
+#: bim_ba.php:89 bim_ba.php:103 lib/gestudio-prime-note.php:525
+#: lib/gestudio.php:408
+msgid "Expenses"
+msgstr ""
+
+#: bim_ba.php:90 lib/gestudio-prime-note.php:526
+msgid "Clearances"
+msgstr ""
+
+#: bim_ba.php:99
+msgid "Anticipations"
+msgstr ""
+
+#: bim_ba.php:106
+msgid "01-Taxes"
+msgstr ""
+
+#: bim_ba.php:106
+msgid "taxes"
+msgstr ""
+
+#: bim_ba.php:107
+msgid "02-Profits"
+msgstr ""
+
+#: bim_ba.php:107
+msgid "profits"
+msgstr ""
+
+#: bim_ba.php:108
+msgid "03-Restitutions"
+msgstr ""
+
+#: bim_ba.php:108
+msgid "restitutions"
+msgstr ""
+
+#: bim_ba.php:109
+msgid "04-Social Security"
+msgstr ""
+
+#: bim_ba.php:109
+msgid "social-security"
+msgstr ""
+
+#: bim_ba.php:110
+msgid "05-Salaries"
+msgstr ""
+
+#: bim_ba.php:110
+msgid "salaries"
+msgstr ""
+
+#: bim_ba.php:111
+msgid "06-Internal Contributors"
+msgstr ""
+
+#: bim_ba.php:111
+msgid "internal-contributors"
+msgstr ""
+
+#: bim_ba.php:112
+msgid "07-External Contributors"
+msgstr ""
+
+#: bim_ba.php:112
+msgid "external-contributors"
+msgstr ""
+
+#: bim_ba.php:113
+msgid "08-Loans"
+msgstr ""
+
+#: bim_ba.php:113
+msgid "loans"
+msgstr ""
+
+#: bim_ba.php:114
+msgid "09-Energy Supplies"
+msgstr ""
+
+#: bim_ba.php:114
+msgid "energy-supplies"
+msgstr ""
+
+#: bim_ba.php:115
+msgid "10-Communications"
+msgstr ""
+
+#: bim_ba.php:115
+msgid "communications"
+msgstr ""
+
+#: bim_ba.php:116
+msgid "11-Assistence"
+msgstr ""
+
+#: bim_ba.php:116
+msgid "assistence"
+msgstr ""
+
+#: bim_ba.php:117
+msgid "12-Office Supplies"
+msgstr ""
+
+#: bim_ba.php:117
+msgid "office-supplies"
+msgstr ""
+
+#: bim_ba.php:118
+msgid "13-Fleet"
+msgstr ""
+
+#: bim_ba.php:118
+msgid "fleet"
+msgstr ""
+
+#: bim_ba.php:119
+msgid "14-Policies"
+msgstr ""
+
+#: bim_ba.php:119
+msgid "policies"
+msgstr ""
+
+#: bim_ba.php:120
+msgid "15-Other"
+msgstr ""
+
+#: bim_ba.php:120
+msgid "other"
+msgstr ""
+
+#: bim_ba.php:130 lib/gestudio-operatori.php:53
+msgid "Role of Operator"
+msgstr ""
+
+#: bim_ba.php:133 lib/gestudio-rapporti.php:282 lib/gestudio.php:201
+msgid "Studio"
+msgstr ""
+
+#: bim_ba.php:134
+msgid "Contributor"
+msgstr ""
+
+#: bim_ba.php:135 lib/gestudio-lavori.php:108 lib/gestudio-lavori.php:214
+#: lib/gestudio-operatori.php:121 lib/gestudio-settings-page.php:268
+#: lib/gestudio.php:75 lib/gestudio.php:321
+msgid "Client"
+msgstr ""
+
+#: bim_ba.php:136 lib/gestudio-lavori.php:305
+#: lib/gestudio-settings-page.php:351
+msgid "Contractor"
+msgstr ""
+
+#: bim_ba.php:137
+msgid "Bank"
+msgstr ""
+
+#: bim_ba.php:146
+msgid "Fase di Lavorazione"
+msgstr ""
+
+#: bim_ba.php:149
+msgid "01-Inquest"
+msgstr ""
+
+#: bim_ba.php:150
+msgid "02-Draft"
+msgstr ""
+
+#: bim_ba.php:151
+msgid "03-Final Project"
+msgstr ""
+
+#: bim_ba.php:152
+msgid "04-Executive project"
+msgstr ""
+
+#: bim_ba.php:153
+msgid "05-Tender Invitation"
+msgstr ""
+
+#: bim_ba.php:154
+msgid "06-Contract"
+msgstr ""
+
+#: bim_ba.php:155
+msgid "07-Project Management"
+msgstr ""
+
+#: bim_ba.php:156
+msgid "08-Trials"
+msgstr ""
+
+#: bim_ba.php:165 lib/gestudio-rapporti.php:60
+msgid "Type of Report"
+msgstr ""
+
+#: bim_ba.php:169
+msgid "Draft Bill"
+msgstr ""
+
+#: bim_ba.php:170
+msgid "Final Bill"
+msgstr ""
+
+#: bim_ba.php:171
+msgid "Fee"
+msgstr ""
+
+#: bim_ba.php:172 lib/gestudio-rapporti.php:278 lib/gestudio.php:263
+msgid "Invoice"
+msgstr ""
+
+#: bim_ba.php:173
+msgid "Credit"
+msgstr ""
+
+#: lib/gestudio-lavori.php:25 lib/gestudio-lavori.php:36
+msgid "Projects"
+msgstr ""
+
+#: lib/gestudio-lavori.php:26 lib/gestudio-lavori.php:213
+#: lib/gestudio-operatori.php:129 lib/gestudio-prime-note.php:143
+#: lib/gestudio-prime-note.php:258 lib/gestudio-rapporti.php:132
+#: lib/gestudio-rapporti.php:227 lib/gestudio-settings-page.php:267
+#: lib/gestudio.php:231
+msgid "Project"
+msgstr ""
+
+#: lib/gestudio-lavori.php:27 lib/gestudio-operatori.php:23
+#: lib/gestudio-prime-note.php:28 lib/gestudio-rapporti.php:30
+msgid "Add"
+msgstr ""
+
+#: lib/gestudio-lavori.php:28
+msgid "Add Project"
+msgstr ""
+
+#: lib/gestudio-lavori.php:29 lib/gestudio-lavori.php:216
+msgid "Modify Project"
+msgstr ""
+
+#: lib/gestudio-lavori.php:30
+msgid "New Project"
+msgstr ""
+
+#: lib/gestudio-lavori.php:31
+msgid "-List of Projects"
+msgstr ""
+
+#: lib/gestudio-lavori.php:32
+msgid "View Project"
+msgstr ""
+
+#: lib/gestudio-lavori.php:33
+msgid "Search Lavori"
+msgstr ""
+
+#: lib/gestudio-lavori.php:34
+msgid "No Project found"
+msgstr ""
+
+#: lib/gestudio-lavori.php:35
+msgid "No Project found in Trash"
+msgstr ""
+
+#: lib/gestudio-lavori.php:57
+msgid "Project Phase"
+msgstr ""
+
+#: lib/gestudio-lavori.php:73 lib/gestudio-lavori.php:187
+msgid "Inspect Project"
+msgstr ""
+
+#: lib/gestudio-lavori.php:85
+msgid "-Project Phases"
+msgstr ""
+
+#: lib/gestudio-lavori.php:94
+msgid "Client/Timing"
+msgstr ""
+
+#: lib/gestudio-lavori.php:111
+msgid "-Select Client-"
+msgstr ""
+
+#: lib/gestudio-lavori.php:121 lib/gestudio-lavori.php:215
+#: lib/gestudio-operatori.php:130 lib/gestudio-settings-page.php:269
+msgid "Scheduled Deadline"
+msgstr ""
+
+#: lib/gestudio-lavori.php:124 lib/gestudio-prime-note.php:451
+#: lib/gestudio-prime-note.php:463
+msgid "-Select Year-"
+msgstr ""
+
+#: lib/gestudio-lavori.php:133 lib/gestudio-prime-note.php:516
+msgid "-Select Month-"
+msgstr ""
+
+#: lib/gestudio-lavori.php:185 lib/gestudio-operatori.php:88
+msgid "Inspect"
+msgstr ""
+
+#: lib/gestudio-lavori.php:257 lib/gestudio-operatori.php:186
+#: lib/gestudio-rapporti.php:32 lib/gestudio-rapporti.php:244
+msgid "Modify Report"
+msgstr ""
+
+#: lib/gestudio-lavori.php:292 lib/gestudio-operatori.php:223
+#: lib/gestudio-prime-note.php:30 lib/gestudio-prime-note.php:265
+msgid "Modify Blotter Entry"
+msgstr ""
+
+#: lib/gestudio-lavori.php:328
+msgid "To inspect a Project, select from dropdown list and press"
+msgstr ""
+
+#: lib/gestudio-operatori.php:21 lib/gestudio-operatori.php:32
+msgid "Operators"
+msgstr ""
+
+#: lib/gestudio-operatori.php:22 lib/gestudio-operatori.php:116
+#: lib/gestudio-prime-note.php:154 lib/gestudio-prime-note.php:259
+#: lib/gestudio-rapporti.php:120 lib/gestudio-rapporti.php:226
+#: lib/gestudio-settings-page.php:121 lib/gestudio.php:240
+msgid "Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:24
+msgid "Add Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:25 lib/gestudio-operatori.php:118
+msgid "Modify Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:26
+msgid "New Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:27
+msgid "-List of Operators"
+msgstr ""
+
+#: lib/gestudio-operatori.php:28
+msgid "View Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:29
+msgid "Search Operators"
+msgstr ""
+
+#: lib/gestudio-operatori.php:30
+msgid "No Operator found"
+msgstr ""
+
+#: lib/gestudio-operatori.php:31
+msgid "No Operator found in Trash"
+msgstr ""
+
+#: lib/gestudio-operatori.php:67 lib/gestudio-operatori.php:90
+msgid "Inspect Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:79
+msgid "-Roles of Operator"
+msgstr ""
+
+#: lib/gestudio-operatori.php:117 lib/gestudio.php:241
+msgid "Role"
+msgstr ""
+
+#: lib/gestudio-operatori.php:255
+msgid "To inspect an Operator, select from dropdown list and press"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:26 lib/gestudio-prime-note.php:37
+msgid "Blotter Entries"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:27 lib/gestudio-prime-note.php:254
+msgid "Blotter Entry"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:29
+msgid "Add Blotter Entry"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:31
+msgid "New Blotter Entry"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:32
+msgid "-List Blotter Entries"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:33
+msgid "View Blotter Entry"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:34 lib/gestudio-prime-note.php:75
+#: lib/gestudio-prime-note.php:239
+msgid "Search Blotter Entries"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:35
+msgid "No Blotter Entry found"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:36
+msgid "No Blotter Entry found in Trash"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:87
+msgid "-Counting Categories"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:96 lib/gestudio-prime-note.php:260
+msgid "Movement"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:116
+msgid "Cash Income"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:117
+msgid "Cash Expense"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:118
+msgid "Bank Income"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:119
+msgid "Bank Expense"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:120
+msgid "Clearance Bank=>Cash"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:121
+msgid "Clearance Cash=>Bank"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:138 lib/gestudio-rapporti.php:228
+#: lib/gestudio.php:235 lib/gestudio.php:245
+msgid "Amount"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:146 lib/gestudio-rapporti.php:135
+#: lib/gestudio.php:13
+msgid "-Select Project-"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:157 lib/gestudio-rapporti.php:123
+#: lib/gestudio-settings-page.php:173 lib/gestudio.php:7
+msgid "-Select Operator-"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:218
+msgid "Warning: Counting Category not defined."
+msgstr ""
+
+#: lib/gestudio-prime-note.php:237
+msgid "Search"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:255 lib/gestudio-rapporti.php:225
+#: lib/gestudio.php:234 lib/gestudio.php:244
+msgid "Date"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:256
+msgid "Description"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:344 lib/gestudio.php:250
+msgid "Balance"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:357
+msgid ""
+"To search a Blotter Entry, select Project and/or Operator OR time range\n"
+"\t\t\t\t\tand/or Counting Category and/or keyword, then press"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:449
+msgid " Bottom Limit:"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:461
+msgid "Upper Limit:"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:482
+msgid "Counting Category:"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:484
+msgid "-Select Category-"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:494
+msgid "Search Text:"
+msgstr ""
+
+#: lib/gestudio-prime-note.php:531
+msgid "Warning: Counting Category and Movement are in conflict."
+msgstr ""
+
+#: lib/gestudio-rapporti.php:28 lib/gestudio-rapporti.php:39
+msgid "Reports"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:29 lib/gestudio-rapporti.php:223
+msgid "Report"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:31
+msgid "Add Report"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:33
+msgid "Nuovo Report"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:34
+msgid "-List of Reports"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:35
+msgid "View Report"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:36
+msgid "Search Reports"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:37
+msgid "No Report found"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:38
+msgid "No Report found in Trash"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:78
+msgid "Inspect Reports"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:90
+msgid "-Types of Report"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:100
+msgid "Report Data"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:143
+msgid "Taxable"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:147
+msgid "Superannuations (%)"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:151
+msgid "VAT (%)"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:155
+msgid "Withholding (%)"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:209
+msgid "Inspect Reports."
+msgstr ""
+
+#: lib/gestudio-rapporti.php:224
+msgid "Type"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:257
+msgid "At the moment, no Reports to Inspect."
+msgstr ""
+
+#: lib/gestudio-rapporti.php:282
+msgid "Collaboratore"
+msgstr ""
+
+#: lib/gestudio-rapporti.php:283
+msgid ""
+"Warning: if Invoice belongs to the countancy of the Studio,\n"
+"\t\t\t\t\t\tuse Blotter Entry, not a Report."
+msgstr ""
+
+#: lib/gestudio-settings-page.php:34
+msgid "Manage Studio"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:51
+msgid "-Studio Settings"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:63
+msgid "Gestione Studio."
+msgstr ""
+
+#: lib/gestudio-settings-page.php:68
+msgid "Warning: you didn't select the Operator the accountancy is related to."
+msgstr ""
+
+#: lib/gestudio-settings-page.php:69 lib/gestudio-settings-page.php:114
+msgid "Studio Settings"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:79
+msgid "Fixed Monthly Expenses in the last Year: "
+msgstr ""
+
+#: lib/gestudio-settings-page.php:93
+msgid "Save Settings"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:97
+msgid "List of all Projects"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:98
+msgid "List of all Operators"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:99
+msgid "List of all Reports"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:100
+msgid "List of all Blotter Entries"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:129
+msgid "Fixed Expenses"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:160
+msgid ""
+"Select an Operator with Role 'Studio' the accountancy is related to\n"
+"    \t\t\t (create it if necessary), then check the le Counting Categories "
+"that build up Fixed Expenses:"
+msgstr ""
+
+#: lib/gestudio-settings-page.php:270 lib/gestudio.php:257
+msgid "Forecast Incomes "
+msgstr ""
+
+#: lib/gestudio-settings-page.php:374
+msgid "At the moment, no Balance may be forecast (not enough data)."
+msgstr ""
+
+#: lib/gestudio-settings-page.php:389
+msgid "Total Forecast Incomes "
+msgstr ""
+
+#: lib/gestudio-settings-page.php:392
+msgid "Deadline of all Projects "
+msgstr ""
+
+#: lib/gestudio-settings-page.php:395
+msgid "Fixed Expenses at that date "
+msgstr ""
+
+#: lib/gestudio.php:5
+msgid "Operator:"
+msgstr ""
+
+#: lib/gestudio.php:11
+msgid "Project:"
+msgstr ""
+
+#: lib/gestudio.php:40
+msgid "Reset"
+msgstr ""
+
+#: lib/gestudio.php:232 lib/gestudio.php:242
+msgid "Report/Blotter Entry"
+msgstr ""
+
+#: lib/gestudio.php:233 lib/gestudio.php:243
+msgid "Type/Count. Cat."
+msgstr ""
+
+#: lib/gestudio.php:271
+msgid "You must login as Administrator."
+msgstr ""
+
+#: lib/gestudio.php:277
+msgid "Sorry.There was a security issue."
+msgstr ""
+
+#: lib/gestudio.php:296
+msgid "January"
+msgstr ""
+
+#: lib/gestudio.php:297
+msgid "February"
+msgstr ""
+
+#: lib/gestudio.php:298
+msgid "March"
+msgstr ""
+
+#: lib/gestudio.php:299
+msgid "April"
+msgstr ""
+
+#: lib/gestudio.php:300
+msgid "May"
+msgstr ""
+
+#: lib/gestudio.php:301
+msgid "June"
+msgstr ""
+
+#: lib/gestudio.php:302
+msgid "July"
+msgstr ""
+
+#: lib/gestudio.php:303
+msgid "August"
+msgstr ""
+
+#: lib/gestudio.php:304
+msgid "September"
+msgstr ""
+
+#: lib/gestudio.php:305
+msgid "October"
+msgstr ""
+
+#: lib/gestudio.php:306
+msgid "November"
+msgstr ""
+
+#: lib/gestudio.php:307
+msgid "December"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BIM_ba"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.andywar.net/BIM_ba/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A very basic Building Information Modeling"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "andywar65"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.andywar.net/"
+msgstr ""
