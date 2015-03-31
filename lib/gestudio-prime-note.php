@@ -354,8 +354,7 @@ class GestudioPrimeNote{
 		Gestudio::admin_login_msg();
 		
 		if ( !isset($_POST['gstu-pn-query']) OR $_POST['gstu-pn-query'] <> $this->inspect) {//hai fatto richiesta?
-			echo __('To search a Blotter Entry, select Project and/or Operator OR time range
-					and/or Counting Category and/or keyword, then press','bimba'). ' "' . $this->inspect . '".';
+			echo __('To search a Blotter Entry, select Project and/or Operator OR time range and/or Counting Category and/or keyword, then press','bimba'). ' "' . $this->inspect . '".';
 			return;
 		}
 		

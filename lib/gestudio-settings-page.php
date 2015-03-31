@@ -157,8 +157,7 @@ class GestudioSettingsPage
     
     public function print_section_info()
     {
-    	print __("Select an Operator with Role 'Studio' the accountancy is related to
-    			 (create it if necessary), then check the le Counting Categories that build up Fixed Expenses:", 'bimba');
+    	print __("Select an Operator with Role 'Studio' the accountancy is related to (create it if necessary), then check the le Counting Categories that build up Fixed Expenses:", 'bimba');
     }
     
     public function operatore_callback()

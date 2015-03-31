@@ -280,8 +280,7 @@ class GestudioRapporti{
 			$ruolo = $this->array_ruoli_opr [ $this->operatore ];
 				
 			if ($ruolo == __('Studio', 'bimba') OR $ruolo == __('Collaboratore', 'bimba')){
-				$errore = __('Warning: if Invoice belongs to the countancy of the Studio,
-						use Blotter Entry, not a Report.', 'bimba');
+				$errore = __('Warning: if Invoice belongs to the countancy of the Studio, use Blotter Entry, not a Report.', 'bimba');
 			}
 		}
 		return $errore;
