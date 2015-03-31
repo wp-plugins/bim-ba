@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIM_ba 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/bim-ba\n"
-"POT-Creation-Date: 2015-03-31 15:29:32+00:00\n"
+"POT-Creation-Date: 2015-03-31 17:35:22+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-31 18:16+0100\n"
+"PO-Revision-Date: 2015-03-31 20:02+0100\n"
 "Last-Translator: Andy War <andy.war1965@gmail.com>\n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.6.11\n"
@@ -20,16 +20,16 @@ msgstr ""
 msgid "Counting Category"
 msgstr "Categoria Contabile"
 
-#: bim_ba.php:88 bim_ba.php:97 lib/gestudio-prime-note.php:524
+#: bim_ba.php:88 bim_ba.php:97 lib/gestudio-prime-note.php:523
 msgid "Incomes"
 msgstr "Entrate"
 
-#: bim_ba.php:89 bim_ba.php:103 lib/gestudio-prime-note.php:525
+#: bim_ba.php:89 bim_ba.php:103 lib/gestudio-prime-note.php:524
 #: lib/gestudio.php:408
 msgid "Expenses"
 msgstr "Uscite"
 
-#: bim_ba.php:90 lib/gestudio-prime-note.php:526
+#: bim_ba.php:90 lib/gestudio-prime-note.php:525
 msgid "Clearances"
 msgstr "Giroconti"
 
@@ -170,13 +170,13 @@ msgid "Contributor"
 msgstr "Collaboratore"
 
 #: bim_ba.php:135 lib/gestudio-lavori.php:108 lib/gestudio-lavori.php:214
-#: lib/gestudio-operatori.php:121 lib/gestudio-settings-page.php:268
+#: lib/gestudio-operatori.php:121 lib/gestudio-settings-page.php:267
 #: lib/gestudio.php:75 lib/gestudio.php:321
 msgid "Client"
 msgstr "Committente"
 
 #: bim_ba.php:136 lib/gestudio-lavori.php:305
-#: lib/gestudio-settings-page.php:351
+#: lib/gestudio-settings-page.php:350
 msgid "Contractor"
 msgstr "Ditta"
 
@@ -251,7 +251,7 @@ msgstr "Lavori"
 #: lib/gestudio-lavori.php:26 lib/gestudio-lavori.php:213
 #: lib/gestudio-operatori.php:129 lib/gestudio-prime-note.php:143
 #: lib/gestudio-prime-note.php:258 lib/gestudio-rapporti.php:132
-#: lib/gestudio-rapporti.php:227 lib/gestudio-settings-page.php:267
+#: lib/gestudio-rapporti.php:227 lib/gestudio-settings-page.php:266
 #: lib/gestudio.php:231
 msgid "Project"
 msgstr "Lavoro"
@@ -314,16 +314,16 @@ msgid "-Select Client-"
 msgstr "-Seleziona Committente-"
 
 #: lib/gestudio-lavori.php:121 lib/gestudio-lavori.php:215
-#: lib/gestudio-operatori.php:130 lib/gestudio-settings-page.php:269
+#: lib/gestudio-operatori.php:130 lib/gestudio-settings-page.php:268
 msgid "Scheduled Deadline"
 msgstr "Fine Lavori"
 
-#: lib/gestudio-lavori.php:124 lib/gestudio-prime-note.php:451
-#: lib/gestudio-prime-note.php:463
+#: lib/gestudio-lavori.php:124 lib/gestudio-prime-note.php:450
+#: lib/gestudio-prime-note.php:462
 msgid "-Select Year-"
 msgstr "-Seleziona Anno-"
 
-#: lib/gestudio-lavori.php:133 lib/gestudio-prime-note.php:516
+#: lib/gestudio-lavori.php:133 lib/gestudio-prime-note.php:515
 msgid "-Select Month-"
 msgstr "-Seleziona Mese-"
 
@@ -485,7 +485,7 @@ msgid "-Select Project-"
 msgstr "-Seleziona Lavoro-"
 
 #: lib/gestudio-prime-note.php:157 lib/gestudio-rapporti.php:123
-#: lib/gestudio-settings-page.php:173 lib/gestudio.php:7
+#: lib/gestudio-settings-page.php:172 lib/gestudio.php:7
 msgid "-Select Operator-"
 msgstr "-Seleziona Operatore-"
 
@@ -512,34 +512,34 @@ msgstr "Bilancio"
 
 #: lib/gestudio-prime-note.php:357
 msgid ""
-"To search a Blotter Entry, select Project and/or Operator OR time range\n"
-"\t\t\t\t\tand/or Counting Category and/or keyword, then press"
+"To search a Blotter Entry, select Project and/or Operator OR time range and/"
+"or Counting Category and/or keyword, then press"
 msgstr ""
 "Per cercare una Prima Nota, selezionare un Lavoro e/o un Operatore OPPURE un "
 "Intervallo Temporale e/o una Categoria Contabile e/o una Parola Chiave, poi "
 "premere"
 
-#: lib/gestudio-prime-note.php:449
+#: lib/gestudio-prime-note.php:448
 msgid " Bottom Limit:"
 msgstr "Limite Inferiore:"
 
-#: lib/gestudio-prime-note.php:461
+#: lib/gestudio-prime-note.php:460
 msgid "Upper Limit:"
 msgstr "Limite Superiore:"
 
-#: lib/gestudio-prime-note.php:482
+#: lib/gestudio-prime-note.php:481
 msgid "Counting Category:"
 msgstr "Categoria Contabile:"
 
-#: lib/gestudio-prime-note.php:484
+#: lib/gestudio-prime-note.php:483
 msgid "-Select Category-"
 msgstr "-Seleziona Categoria-"
 
-#: lib/gestudio-prime-note.php:494
+#: lib/gestudio-prime-note.php:493
 msgid "Search Text:"
 msgstr "Ricerca Testo:"
 
-#: lib/gestudio-prime-note.php:531
+#: lib/gestudio-prime-note.php:530
 msgid "Warning: Counting Category and Movement are in conflict."
 msgstr ""
 "Attenzione: la Categoria Contabile e il Movimento sono in contraddizione."
@@ -626,8 +626,8 @@ msgstr "Collaboratore"
 
 #: lib/gestudio-rapporti.php:283
 msgid ""
-"Warning: if Invoice belongs to the countancy of the Studio,\n"
-"\t\t\t\t\t\tuse Blotter Entry, not a Report."
+"Warning: if Invoice belongs to the countancy of the Studio, use Blotter "
+"Entry, not a Report."
 msgstr ""
 "Attenzione: se la Fattura è relativa alla Contabilità dello Studio, "
 "utilizzare una Prima Nota, non un Rapporto."
@@ -683,33 +683,33 @@ msgstr "Spese Fisse"
 
 #: lib/gestudio-settings-page.php:160
 msgid ""
-"Select an Operator with Role 'Studio' the accountancy is related to\n"
-"    \t\t\t (create it if necessary), then check the le Counting Categories "
-"that build up Fixed Expenses:"
+"Select an Operator with Role 'Studio' the accountancy is related to (create "
+"it if necessary), then check the le Counting Categories that build up Fixed "
+"Expenses:"
 msgstr ""
 "Selezionare un Operatore con Ruolo 'Studio' a cui è associata la Contabilità "
 "(crearne uno se necessario), poi selezionare tutte le Categorie Contabili "
 "che costituiscono Spesa Fissa."
 
-#: lib/gestudio-settings-page.php:270 lib/gestudio.php:257
+#: lib/gestudio-settings-page.php:269 lib/gestudio.php:257
 msgid "Forecast Incomes "
 msgstr "Previsione di Entrata"
 
-#: lib/gestudio-settings-page.php:374
+#: lib/gestudio-settings-page.php:373
 msgid "At the moment, no Balance may be forecast (not enough data)."
 msgstr ""
 "Al momento non si possono fare previsioni di Bilancio (non ci sono "
 "abbastanza dati)."
 
-#: lib/gestudio-settings-page.php:389
+#: lib/gestudio-settings-page.php:388
 msgid "Total Forecast Incomes "
 msgstr "Totale Entrate Previste"
 
-#: lib/gestudio-settings-page.php:392
+#: lib/gestudio-settings-page.php:391
 msgid "Deadline of all Projects "
 msgstr "Fine di tutti i Lavori"
 
-#: lib/gestudio-settings-page.php:395
+#: lib/gestudio-settings-page.php:394
 msgid "Fixed Expenses at that date "
 msgstr "Spese Fisse a quella data"
 
