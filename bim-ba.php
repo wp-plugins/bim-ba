@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: BIM_ba
-Plugin URI: http://www.andywar.net/BIM_ba/
+Plugin Name: BIM-ba
+Plugin URI: http://www.andywar.net/wordpress-plugins/bim-ba/
 Description: A very basic Building Information Modeling
-Version: 1.0
+Version: 1.0.1
 Author: andywar65
 Author URI: http://www.andywar.net/
 License: GPLv2

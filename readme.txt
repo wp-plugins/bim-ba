@@ -1,10 +1,10 @@
-=== BIM_ba ===
+=== BIM-ba ===
 Contributors: andywar65
 Donate link: http://www.andywar.net/wordpress-plugins/donate
 Tags: BIM, project, management, studio, admin
 Requires at least: 4.1
 Tested up to: 4.2Beta
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ This is the first module of a BIM (Building Information Modeling) based on WordP
 
 == Description ==
 
-BIM_ba is a very basic BIM at it's first steps.
+BIM-ba is a very basic BIM at it's first steps.
 Only module available by now is called 'Manage Studio', and it helps management of projects and countability of a small design firm (like the one I own!). 
 This module works on the backend of WordPress, and requires admin priviledges to be handled. Plugin creates following Custom Post Types:
 
@@ -76,10 +76,16 @@ It works only in the backend of WordPress, with admin roles.
 
 == Changelog ==
 
+= 1.0.1 =
+* Italian translation available.
+
 = 1.0 =
 * First release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Italian translation available.
 
 = 1.0 =
 * No upgrades available.
