@@ -59,7 +59,10 @@ define('BIMBA_PLUGIN_LIB_DIR', BIMBA_PLUGIN_DIR . BIMBA_DS . 'lib');
 
 add_action ( 'plugins_loaded' , 'bimba_textdomain');
 function bimba_textdomain(){
-	load_plugin_textdomain( 'bim-ba', false, dirname( plugin_basename( __FILE__ ) ) . '/languages');
+	if (!load_plugin_textdomain( 'bim-ba', false, dirname( plugin_basename( __FILE__ ) ) . '/languages') ){
+		load_plugin_textdomain( 'bim-ba', false, dirname( plugin_basename( __FILE__ ) ) . '/languages');
+	}
+	
 }
 
 /*
@@ -79,6 +82,10 @@ require_once BIMBA_PLUGIN_LIB_DIR . BIMBA_DS . 'gestudio-prime-note.php';
 */
 
 function register_gestudio_cpt_tax(){
+	
+	if (!load_plugin_textdomain( 'bim-ba', false, dirname( plugin_basename( __FILE__ ) ) . '/languages') ){
+		load_plugin_textdomain( 'bim-ba', false, dirname( plugin_basename( __FILE__ ) ) . '/languages');
+	}
 	
 	//registra taxonomy categoria contabile del cpt prime note
 	register_taxonomy('categoria-contabile' , 'prime-note', array ( 'hierarchical' => true, 'label' => __('Counting Category','bim-ba'),
