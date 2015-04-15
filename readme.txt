@@ -3,7 +3,7 @@ Contributors: andywar65
 Donate link: http://www.andywar.net/wordpress-plugins/donate
 Tags: BIM, project, management, studio, admin
 Requires at least: 4.1
-Tested up to: 4.2Beta
+Tested up to: 4.2
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
