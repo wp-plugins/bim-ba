@@ -3,7 +3,7 @@
 Plugin Name: BIM-ba
 Plugin URI: http://www.andywar.net/wordpress-plugins/bim-ba/
 Description: A very basic Building Information Modeling
-Version: 1.0.1
+Version: 1.0.2
 Author: andywar65
 Author URI: http://www.andywar.net/
 License: GPLv2
@@ -45,7 +45,7 @@ function bimba_activate() {//attivazione plugin
  * COSTANTI
 */
 
-define('BIMBA_PLUGIN_VERSION', '1.0');
+define('BIMBA_PLUGIN_VERSION', '1.0.2');
 define('BIMBA_PLUGIN_SLUG', 'bim-ba');
 
 define('BIMBA_DS', DIRECTORY_SEPARATOR);
@@ -75,6 +75,7 @@ require_once BIMBA_PLUGIN_LIB_DIR . BIMBA_DS . 'gestudio-operatori.php';
 require_once BIMBA_PLUGIN_LIB_DIR . BIMBA_DS . 'gestudio-lavori.php';
 require_once BIMBA_PLUGIN_LIB_DIR . BIMBA_DS . 'gestudio-rapporti.php';
 require_once BIMBA_PLUGIN_LIB_DIR . BIMBA_DS . 'gestudio-prime-note.php';
+require_once BIMBA_PLUGIN_LIB_DIR . BIMBA_DS . 'steel-deck.php';
 
 
 /*

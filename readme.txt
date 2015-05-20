@@ -4,7 +4,7 @@ Donate link: http://www.andywar.net/wordpress-plugins/donate
 Tags: BIM, project, management, studio, admin
 Requires at least: 4.1
 Tested up to: 4.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ This submenu shows the balance of your Studio in every single Project and foreca
 
 Additional instructions may be found here: http://www.andywar.net/wordpress-plugins/bim-ba/
 
+Since version 1.0.2 a very basic structural analisys module is available using the shortcode [steel_deck] in your posts and pages. Shortcode provides calculation
+of a steel deck given size, materials, profiles and design criterion.
+
 == Installation ==
 
 1. Download and unzip `bim-ba` folder, then upload it to the `/wp-content/plugins/` directory
@@ -76,6 +79,9 @@ It works only in the backend of WordPress, with admin roles.
 
 == Changelog ==
 
+= 1.0.2 =
+* Steel deck structural analisys available.
+
 = 1.0.1 =
 * Italian translation available.
 
@@ -83,6 +89,10 @@ It works only in the backend of WordPress, with admin roles.
 * First release.
 
 == Upgrade Notice ==
+
+
+= 1.0.2 =
+* Steel deck structural analisys available.
 
 = 1.0.1 =
 * Italian translation available.
