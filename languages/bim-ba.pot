@@ -1,10 +1,10 @@
-# Copyright (C) 2015 BIM_ba
-# This file is distributed under the same license as the BIM_ba package.
+# Copyright (C) 2015 BIM-ba
+# This file is distributed under the same license as the BIM-ba package.
 msgid ""
 msgstr ""
-"Project-Id-Version: BIM_ba 1.0\n"
+"Project-Id-Version: BIM-ba 1.0.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/bim-ba\n"
-"POT-Creation-Date: 2015-03-31 17:35:22+00:00\n"
+"POT-Creation-Date: 2015-05-21 20:23:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,232 +12,232 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: bim_ba.php:85 lib/gestudio-prime-note.php:58
+#: bim-ba.php:92 lib/gestudio-prime-note.php:58
 #: lib/gestudio-prime-note.php:257
 msgid "Counting Category"
 msgstr ""
 
-#: bim_ba.php:88 bim_ba.php:97 lib/gestudio-prime-note.php:523
+#: bim-ba.php:95 bim-ba.php:104 lib/gestudio-prime-note.php:523
 msgid "Incomes"
 msgstr ""
 
-#: bim_ba.php:89 bim_ba.php:103 lib/gestudio-prime-note.php:524
+#: bim-ba.php:96 bim-ba.php:110 lib/gestudio-prime-note.php:524
 #: lib/gestudio.php:408
 msgid "Expenses"
 msgstr ""
 
-#: bim_ba.php:90 lib/gestudio-prime-note.php:525
+#: bim-ba.php:97 lib/gestudio-prime-note.php:525
 msgid "Clearances"
 msgstr ""
 
-#: bim_ba.php:99
+#: bim-ba.php:106
 msgid "Anticipations"
 msgstr ""
 
-#: bim_ba.php:106
+#: bim-ba.php:113
 msgid "01-Taxes"
 msgstr ""
 
-#: bim_ba.php:106
+#: bim-ba.php:113
 msgid "taxes"
 msgstr ""
 
-#: bim_ba.php:107
+#: bim-ba.php:114
 msgid "02-Profits"
 msgstr ""
 
-#: bim_ba.php:107
+#: bim-ba.php:114
 msgid "profits"
 msgstr ""
 
-#: bim_ba.php:108
+#: bim-ba.php:115
 msgid "03-Restitutions"
 msgstr ""
 
-#: bim_ba.php:108
+#: bim-ba.php:115
 msgid "restitutions"
 msgstr ""
 
-#: bim_ba.php:109
+#: bim-ba.php:116
 msgid "04-Social Security"
 msgstr ""
 
-#: bim_ba.php:109
+#: bim-ba.php:116
 msgid "social-security"
 msgstr ""
 
-#: bim_ba.php:110
+#: bim-ba.php:117
 msgid "05-Salaries"
 msgstr ""
 
-#: bim_ba.php:110
+#: bim-ba.php:117
 msgid "salaries"
 msgstr ""
 
-#: bim_ba.php:111
+#: bim-ba.php:118
 msgid "06-Internal Contributors"
 msgstr ""
 
-#: bim_ba.php:111
+#: bim-ba.php:118
 msgid "internal-contributors"
 msgstr ""
 
-#: bim_ba.php:112
+#: bim-ba.php:119
 msgid "07-External Contributors"
 msgstr ""
 
-#: bim_ba.php:112
+#: bim-ba.php:119
 msgid "external-contributors"
 msgstr ""
 
-#: bim_ba.php:113
+#: bim-ba.php:120
 msgid "08-Loans"
 msgstr ""
 
-#: bim_ba.php:113
+#: bim-ba.php:120
 msgid "loans"
 msgstr ""
 
-#: bim_ba.php:114
+#: bim-ba.php:121
 msgid "09-Energy Supplies"
 msgstr ""
 
-#: bim_ba.php:114
+#: bim-ba.php:121
 msgid "energy-supplies"
 msgstr ""
 
-#: bim_ba.php:115
+#: bim-ba.php:122
 msgid "10-Communications"
 msgstr ""
 
-#: bim_ba.php:115
+#: bim-ba.php:122
 msgid "communications"
 msgstr ""
 
-#: bim_ba.php:116
+#: bim-ba.php:123
 msgid "11-Assistence"
 msgstr ""
 
-#: bim_ba.php:116
+#: bim-ba.php:123
 msgid "assistence"
 msgstr ""
 
-#: bim_ba.php:117
+#: bim-ba.php:124
 msgid "12-Office Supplies"
 msgstr ""
 
-#: bim_ba.php:117
+#: bim-ba.php:124
 msgid "office-supplies"
 msgstr ""
 
-#: bim_ba.php:118
+#: bim-ba.php:125
 msgid "13-Fleet"
 msgstr ""
 
-#: bim_ba.php:118
+#: bim-ba.php:125
 msgid "fleet"
 msgstr ""
 
-#: bim_ba.php:119
+#: bim-ba.php:126
 msgid "14-Policies"
 msgstr ""
 
-#: bim_ba.php:119
+#: bim-ba.php:126
 msgid "policies"
 msgstr ""
 
-#: bim_ba.php:120
+#: bim-ba.php:127
 msgid "15-Other"
 msgstr ""
 
-#: bim_ba.php:120
+#: bim-ba.php:127
 msgid "other"
 msgstr ""
 
-#: bim_ba.php:130 lib/gestudio-operatori.php:53
+#: bim-ba.php:137 lib/gestudio-operatori.php:53
 msgid "Role of Operator"
 msgstr ""
 
-#: bim_ba.php:133 lib/gestudio-rapporti.php:282 lib/gestudio.php:201
+#: bim-ba.php:140 lib/gestudio-rapporti.php:282 lib/gestudio.php:201
 msgid "Studio"
 msgstr ""
 
-#: bim_ba.php:134
+#: bim-ba.php:141
 msgid "Contributor"
 msgstr ""
 
-#: bim_ba.php:135 lib/gestudio-lavori.php:108 lib/gestudio-lavori.php:214
+#: bim-ba.php:142 lib/gestudio-lavori.php:108 lib/gestudio-lavori.php:214
 #: lib/gestudio-operatori.php:121 lib/gestudio-settings-page.php:267
 #: lib/gestudio.php:75 lib/gestudio.php:321
 msgid "Client"
 msgstr ""
 
-#: bim_ba.php:136 lib/gestudio-lavori.php:305
+#: bim-ba.php:143 lib/gestudio-lavori.php:305
 #: lib/gestudio-settings-page.php:350
 msgid "Contractor"
 msgstr ""
 
-#: bim_ba.php:137
+#: bim-ba.php:144
 msgid "Bank"
 msgstr ""
 
-#: bim_ba.php:146
+#: bim-ba.php:153
 msgid "Fase di Lavorazione"
 msgstr ""
 
-#: bim_ba.php:149
+#: bim-ba.php:156
 msgid "01-Inquest"
 msgstr ""
 
-#: bim_ba.php:150
+#: bim-ba.php:157
 msgid "02-Draft"
 msgstr ""
 
-#: bim_ba.php:151
+#: bim-ba.php:158
 msgid "03-Final Project"
 msgstr ""
 
-#: bim_ba.php:152
+#: bim-ba.php:159
 msgid "04-Executive project"
 msgstr ""
 
-#: bim_ba.php:153
+#: bim-ba.php:160
 msgid "05-Tender Invitation"
 msgstr ""
 
-#: bim_ba.php:154
+#: bim-ba.php:161
 msgid "06-Contract"
 msgstr ""
 
-#: bim_ba.php:155
+#: bim-ba.php:162
 msgid "07-Project Management"
 msgstr ""
 
-#: bim_ba.php:156
+#: bim-ba.php:163
 msgid "08-Trials"
 msgstr ""
 
-#: bim_ba.php:165 lib/gestudio-rapporti.php:60
+#: bim-ba.php:172 lib/gestudio-rapporti.php:60
 msgid "Type of Report"
 msgstr ""
 
-#: bim_ba.php:169
+#: bim-ba.php:176
 msgid "Draft Bill"
 msgstr ""
 
-#: bim_ba.php:170
+#: bim-ba.php:177
 msgid "Final Bill"
 msgstr ""
 
-#: bim_ba.php:171
+#: bim-ba.php:178
 msgid "Fee"
 msgstr ""
 
-#: bim_ba.php:172 lib/gestudio-rapporti.php:278 lib/gestudio.php:263
+#: bim-ba.php:179 lib/gestudio-rapporti.php:278 lib/gestudio.php:263
 msgid "Invoice"
 msgstr ""
 
-#: bim_ba.php:173
+#: bim-ba.php:180
 msgid "Credit"
 msgstr ""
 
@@ -773,12 +773,154 @@ msgstr ""
 msgid "December"
 msgstr ""
 
+#: lib/steel-deck.php:83
+msgid "Maximum lowering of Primary Beams: "
+msgstr ""
+
+#: lib/steel-deck.php:83
+msgid " cm (1/500 of span).<br />"
+msgstr ""
+
+#: lib/steel-deck.php:84
+msgid "Distance of Secondary Beams: "
+msgstr ""
+
+#: lib/steel-deck.php:171
+msgid ""
+"No solution for resistance criterion (ULS), maybe deck is too big for "
+"available sections."
+msgstr ""
+
+#: lib/steel-deck.php:174
+msgid ""
+"<p>For resistance criterion (ULS) you can use %d primary beam(s) %s%s at "
+"distance %01.2f m and secondary %s%s at distance %01.2f m.<br />"
+msgstr ""
+
+#: lib/steel-deck.php:178 lib/steel-deck.php:191
+msgid "Deck's total weight is %01.2f kg and costs around %01.2f Euro.</p>"
+msgstr ""
+
+#: lib/steel-deck.php:184
+msgid ""
+"No solution for deformation criterion (ELS), maybe deck is too big for "
+"available sections."
+msgstr ""
+
+#: lib/steel-deck.php:187
+msgid ""
+"<p>For deformation criterion (ELS) you can use %d primary beam(s) %s%s at "
+"distance %01.2f m and secondary %s%s at distance %01.2f m.<br />"
+msgstr ""
+
+#: lib/steel-deck.php:200
+msgid "Analisys not performed, maybe due to a security issue."
+msgstr ""
+
+#: lib/steel-deck.php:205
+msgid ""
+"Notice that fields 'First Side' and 'Second Side' are required (*) and must "
+"be equal or bigger than 2."
+msgstr ""
+
+#: lib/steel-deck.php:362 lib/steel-deck.php:480
+msgid "Steel Deck"
+msgstr ""
+
+#: lib/steel-deck.php:366
+msgid "Primary Beam Span (m)"
+msgstr ""
+
+#: lib/steel-deck.php:369
+msgid "Deck Width (m)"
+msgstr ""
+
+#: lib/steel-deck.php:374 lib/steel-deck.php:492
+msgid "Restraint Type"
+msgstr ""
+
+#: lib/steel-deck.php:378 lib/steel-deck.php:495
+msgid " Hinge"
+msgstr ""
+
+#: lib/steel-deck.php:382 lib/steel-deck.php:497
+msgid " Half Joint"
+msgstr ""
+
+#: lib/steel-deck.php:386 lib/steel-deck.php:499
+msgid " Joint"
+msgstr ""
+
+#: lib/steel-deck.php:392 lib/steel-deck.php:505
+msgid "Deck Type"
+msgstr ""
+
+#: lib/steel-deck.php:396 lib/steel-deck.php:508
+msgid "Wood (1.9kN)"
+msgstr ""
+
+#: lib/steel-deck.php:400 lib/steel-deck.php:510
+msgid "Steel (2.4kN)"
+msgstr ""
+
+#: lib/steel-deck.php:404 lib/steel-deck.php:512
+msgid "Hollow Bricks (3.2kN)"
+msgstr ""
+
+#: lib/steel-deck.php:408 lib/steel-deck.php:514
+msgid "Bricks (3.8kN)"
+msgstr ""
+
+#: lib/steel-deck.php:414 lib/steel-deck.php:520
+msgid "Steel Type"
+msgstr ""
+
+#: lib/steel-deck.php:418 lib/steel-deck.php:523
+msgid " Mild (235 MPa)"
+msgstr ""
+
+#: lib/steel-deck.php:422 lib/steel-deck.php:525
+msgid " Medium (275 MPa)"
+msgstr ""
+
+#: lib/steel-deck.php:426 lib/steel-deck.php:527
+msgid " Fragile (355 MPa)"
+msgstr ""
+
+#: lib/steel-deck.php:432 lib/steel-deck.php:533
+msgid "Exclude a Profile"
+msgstr ""
+
+#: lib/steel-deck.php:436 lib/steel-deck.php:535
+msgid " None"
+msgstr ""
+
+#: lib/steel-deck.php:450 lib/steel-deck.php:545
+msgid "Design Criterion"
+msgstr ""
+
+#: lib/steel-deck.php:454 lib/steel-deck.php:547
+msgid " Minimal Weight"
+msgstr ""
+
+#: lib/steel-deck.php:458 lib/steel-deck.php:549
+msgid " Minimal Height"
+msgstr ""
+
+#: lib/steel-deck.php:484
+msgid "First Side (>=2m)*"
+msgstr ""
+
+#: lib/steel-deck.php:487
+msgid "Second Side (>=2m)*"
+msgstr ""
+
 #. Plugin Name of the plugin/theme
-msgid "BIM_ba"
+msgid "BIM-ba"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://www.andywar.net/BIM_ba/"
+msgid "http://www.andywar.net/wordpress-plugins/bim-ba/"
 msgstr ""
 
 #. Description of the plugin/theme
